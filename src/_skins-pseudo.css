@@ -1,11 +1,11 @@
-/* 
-  
+/*
+
    SKINS:PSEUDO
 
    Customize the color of an element when
    it is focused or hovered over. This is a larger file. Feel
    free to remove and edit colors that aren't needed.
- 
+
  */
 
 .hover-overlay-tint-0:hover { color: var( --overlay-tint-0); }
@@ -200,8 +200,6 @@
 .hover-cyan-9:hover { color: var( --cyan-9); }
 .hover-cyan-10:hover { color: var( --cyan-10); }
 .hover-cyan-11:hover { color: var( --cyan-11); }
-
-/hover-* Background colors */
 
 .hover-bg-overlay-tint-0:hover { background-color: var( --overlay-tint-0); }
 .hover-bg-overlay-tint-1:hover { background-color: var( --overlay-tint-1); }
@@ -589,8 +587,6 @@
 .focus-cyan-10:focus { color: var( --cyan-10); }
 .focus-cyan-11:focus { color: var( --cyan-11); }
 
-/focus-* Background colors */
-
 .focus-bg-overlay-tint-0:focus { background-color: var( --overlay-tint-0); }
 .focus-bg-overlay-tint-1:focus { background-color: var( --overlay-tint-1); }
 .focus-bg-overlay-tint-2:focus { background-color: var( --overlay-tint-2); }
@@ -783,4 +779,3 @@
 .focus-bg-cyan-9:focus { background-color: var( --cyan-9); }
 .focus-bg-cyan-10:focus { background-color: var( --cyan-10); }
 .focus-bg-cyan-11:focus { background-color: var( --cyan-11); }
-

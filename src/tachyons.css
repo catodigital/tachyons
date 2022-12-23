@@ -76,6 +76,7 @@
 @import './_lists';
 @import './_max-widths';
 @import './_widths';
+@import './_min-widths';
 @import './_overflow';
 @import './_position';
 @import './_opacity';
@@ -94,6 +95,7 @@
 @import './_visibility';
 @import './_white-space';
 @import './_vertical-align';
+@import './_word-break';
 @import './_hovers';
 @import './_z-index';
 @import './_nested';

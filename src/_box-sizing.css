@@ -1,11 +1,11 @@
 /*
- 
+
   BOX SIZING
 
 */
 
-*, 
-*::before, 
+*,
+*::before,
 *::after,
 .border-box,
 .border-box::before,

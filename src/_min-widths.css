@@ -1,0 +1,39 @@
+/*
+
+   MIN WIDTHS
+   Docs: NA
+
+   Base:
+     min-width = min-width
+
+     -100 = literal value 100%
+
+     -none  = string value none
+
+
+   Media Query Extensions:
+     -s = small
+     -m = medium
+     -l = large
+
+*/
+
+/* Min Width Percentages */
+
+.min-width-100  { min-width: 100%; }
+.min-width-none { min-width: none; }
+
+@media (--breakpoint-small) {
+  .min-width-100-s  { min-width: 100%; }
+  .min-width-none-s { min-width: none; }
+}
+
+@media (--breakpoint-medium) {
+  .min-width-100-m  { min-width: 100%; }
+  .min-width-none-m { min-width: none; }
+}
+
+@media (--breakpoint-large) {
+  .min-width-100-l  { min-width: 100%; }
+  .min-width-none-l { min-width: none; }
+}
