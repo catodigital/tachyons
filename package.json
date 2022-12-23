@@ -45,7 +45,8 @@
     "build": "npm run build:css && npm run build:minify",
     "build:css": "tachyons src/tachyons.css > css/tachyons.css",
     "build:minify": "tachyons src/tachyons.css --minify > css/tachyons.min.css",
-    "build:watch": "watch \"npm run build\" ./src/"
+    "build:watch": "watch \"npm run build\" ./src/",
+    "healthcheck": "node healthcheck.js"
   },
   "dependencies": {
     "gzip-size": "^7.0.0"

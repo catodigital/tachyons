@@ -21,6 +21,8 @@
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
+.visibility-visible { visibility: visible; }
+.visibility-hidden { visibility: hidden; }
 
 @media (--breakpoint-small) {
   .clip-s {
@@ -29,6 +31,8 @@
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
   }
+  .visibility-visible-s { visibility: visible; }
+  .visibility-hidden-s { visibility: hidden; }
 }
 
 @media (--breakpoint-medium) {
@@ -38,6 +42,8 @@
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
   }
+  .visibility-visible-m { visibility: visible; }
+  .visibility-hidden-m { visibility: hidden; }
 }
 
 @media (--breakpoint-large) {
@@ -47,5 +53,7 @@
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
   }
+  .visibility-visible-l { visibility: visible; }
+  .visibility-hidden-l { visibility: hidden; }
 }
 
