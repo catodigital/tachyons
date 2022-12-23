@@ -733,10 +733,6 @@ img.reponsive { display: block; max-width: 100%; }
 .end-14 { grid-column-end: 14; }
 .end-15 { grid-column-end: 15; }
 .end-16 { grid-column-end: 16; }
-.column-count-1 { -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; }
-.column-count-2 { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; }
-.column-count-3 { -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; }
-.column-count-4 { -webkit-column-count: 4; -moz-column-count: 4; column-count: 4; }
 /*
 
   Grid Row
@@ -3493,10 +3489,6 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .end-14-s { grid-column-end: 14; }
  .end-15-s { grid-column-end: 15; }
  .end-16-s { grid-column-end: 16; }
- .column-count-1-s { -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; }
- .column-count-2-s { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; }
- .column-count-3-s { -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; }
- .column-count-4-s { -webkit-column-count: 4; -moz-column-count: 4; column-count: 4; }
  .row-auto-s { grid-row: auto; }
  .row-start-1-s { grid-row-start: 1; }
  .row-start-2-s { grid-row-start: 2; }
@@ -4040,10 +4032,6 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .end-14-m { grid-column-end: 14; }
  .end-15-m { grid-column-end: 15; }
  .end-16-m { grid-column-end: 16; }
- .column-count-1-m { -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; }
- .column-count-2-m { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; }
- .column-count-3-m { -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; }
- .column-count-4-m { -webkit-column-count: 4; -moz-column-count: 4; column-count: 4; }
  .row-auto-m { grid-row: auto; }
  .row-start-1-m { grid-row-start: 1; }
  .row-start-2-m { grid-row-start: 2; }
@@ -4588,10 +4576,6 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .end-14-l { grid-column-end: 14; }
  .end-15-l { grid-column-end: 15; }
  .end-16-l { grid-column-end: 16; }
- .column-count-1-l { -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; }
- .column-count-2-l { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; }
- .column-count-3-l { -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; }
- .column-count-4-l { -webkit-column-count: 4; -moz-column-count: 4; column-count: 4; }
  .row-auto-l { grid-row: auto; }
  .row-start-1-l { grid-row-start: 1; }
  .row-start-2-l { grid-row-start: 2; }
