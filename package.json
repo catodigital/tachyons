@@ -25,6 +25,7 @@
     "copy-files": "^0.1.0",
     "immutable-css-cli": "^1.1.1",
     "normalize.css": "^8.0.1",
+    "sass": "^1.62.0",
     "tachyons-cli": "^1.3.3",
     "tachyons-modules": "^1.1.10",
     "watch": "^1.0.2"
@@ -40,13 +41,15 @@
     }
   ],
   "scripts": {
-    "start": "npm run build:watch",
-    "mutations": "immutable-css src/tachyons.css --strict",
-    "build": "npm run build:css && npm run build:minify",
-    "build:css": "tachyons src/tachyons.css > css/tachyons.css",
-    "build:minify": "tachyons src/tachyons.css --minify > css/tachyons.min.css",
-    "build:watch": "watch \"npm run build\" ./src/",
-    "healthcheck": "node healthcheck.js"
+    "build": "yarn sass scss/tachyons-field.scss > css/tachyons-field.css",
+    "build-min": "yarn sass --minify scss/tachyons-field.scss > css/tachyons-field.min.css",
+    "xstart": "npm run build:watch",
+    "xmutations": "immutable-css src/tachyons.css --strict",
+    "xbuild": "npm run build:css && npm run build:minify",
+    "xbuild:css": "tachyons src/tachyons.css > css/tachyons.css",
+    "xbuild:minify": "tachyons src/tachyons.css --minify > css/tachyons.min.css",
+    "xbuild:watch": "watch \"npm run build\" ./src/",
+    "xhealthcheck": "node healthcheck.js"
   },
   "dependencies": {
     "gzip-size": "^7.0.0"
