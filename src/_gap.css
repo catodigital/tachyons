@@ -28,14 +28,14 @@
 */
 
 
-.g0 { gap: var(--spacing-0); }
-.g1 { gap: var(--spacing-1); }
-.g2 { gap: var(--spacing-2); }
-.g3 { gap: var(--spacing-3); }
-.g4 { gap: var(--spacing-4); }
-.g5 { gap: var(--spacing-5); }
-.g6 { gap: var(--spacing-6); }
-.g7 { gap: var(--spacing-7); }
+.ga0 { gap: var(--spacing-0); }
+.ga1 { gap: var(--spacing-1); }
+.ga2 { gap: var(--spacing-2); }
+.ga3 { gap: var(--spacing-3); }
+.ga4 { gap: var(--spacing-4); }
+.ga5 { gap: var(--spacing-5); }
+.ga6 { gap: var(--spacing-6); }
+.ga7 { gap: var(--spacing-7); }
 
 .gv0 { row-gap: var(--spacing-0); }
 .gv1 { row-gap: var(--spacing-1); }
@@ -56,14 +56,14 @@
 .gh7 { column-gap: var(--spacing-7); }
 
 @media (--breakpoint-small) {
-  .g0-s { gap: var(--spacing-0); }
-  .g1-s { gap: var(--spacing-1); }
-  .g2-s { gap: var(--spacing-2); }
-  .g3-s { gap: var(--spacing-3); }
-  .g4-s { gap: var(--spacing-4); }
-  .g5-s { gap: var(--spacing-5); }
-  .g6-s { gap: var(--spacing-6); }
-  .g7-s { gap: var(--spacing-7); }
+  .ga0-s { gap: var(--spacing-0); }
+  .ga1-s { gap: var(--spacing-1); }
+  .ga2-s { gap: var(--spacing-2); }
+  .ga3-s { gap: var(--spacing-3); }
+  .ga4-s { gap: var(--spacing-4); }
+  .ga5-s { gap: var(--spacing-5); }
+  .ga6-s { gap: var(--spacing-6); }
+  .ga7-s { gap: var(--spacing-7); }
 
   .gv0-s { row-gap: var(--spacing-0); }
   .gv1-s { row-gap: var(--spacing-1); }
@@ -85,14 +85,14 @@
 }
 
 @media (--breakpoint-medium) {
-  .g0-m { gap: var(--spacing-0); }
-  .g1-m { gap: var(--spacing-1); }
-  .g2-m { gap: var(--spacing-2); }
-  .g3-m { gap: var(--spacing-3); }
-  .g4-m { gap: var(--spacing-4); }
-  .g5-m { gap: var(--spacing-5); }
-  .g6-m { gap: var(--spacing-6); }
-  .g7-m { gap: var(--spacing-7); }
+  .ga0-m { gap: var(--spacing-0); }
+  .ga1-m { gap: var(--spacing-1); }
+  .ga2-m { gap: var(--spacing-2); }
+  .ga3-m { gap: var(--spacing-3); }
+  .ga4-m { gap: var(--spacing-4); }
+  .ga5-m { gap: var(--spacing-5); }
+  .ga6-m { gap: var(--spacing-6); }
+  .ga7-m { gap: var(--spacing-7); }
 
   .gv0-m { row-gap: var(--spacing-0); }
   .gv1-m { row-gap: var(--spacing-1); }
@@ -114,14 +114,14 @@
 }
 
 @media (--breakpoint-large) {
-  .g0-l { gap: var(--spacing-0); }
-  .g1-l { gap: var(--spacing-1); }
-  .g2-l { gap: var(--spacing-2); }
-  .g3-l { gap: var(--spacing-3); }
-  .g4-l { gap: var(--spacing-4); }
-  .g5-l { gap: var(--spacing-5); }
-  .g6-l { gap: var(--spacing-6); }
-  .g7-l { gap: var(--spacing-7); }
+  .ga0-l { gap: var(--spacing-0); }
+  .ga1-l { gap: var(--spacing-1); }
+  .ga2-l { gap: var(--spacing-2); }
+  .ga3-l { gap: var(--spacing-3); }
+  .ga4-l { gap: var(--spacing-4); }
+  .ga5-l { gap: var(--spacing-5); }
+  .ga6-l { gap: var(--spacing-6); }
+  .ga7-l { gap: var(--spacing-7); }
 
   .gv0-l { row-gap: var(--spacing-0); }
   .gv1-l { row-gap: var(--spacing-1); }

@@ -13,9 +13,9 @@
 }
 
 .striped--light:nth-child(odd) {
-  background-color: var(--gray-10);
+  background-color: var(--white-10);
 }
 
 .striped--dark:nth-child(odd) {
-  background-color: var(--gray-0);
+  background-color: var(--black-10);
 }
