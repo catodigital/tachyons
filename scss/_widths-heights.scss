@@ -35,9 +35,10 @@
 }
 
 @include expand-width-height("");
-@media ($breakpoint-medium) {
+@media #{$media-breakpoint-medium} {
   @include expand-width-height("-m");
 }
-@media ($breakpoint-medium) {
+
+@media #{$media-breakpoint-large} {
   @include expand-width-height("-l");
 }

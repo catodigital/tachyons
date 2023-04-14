@@ -3,14 +3,13 @@
 @use "vars";
 @use "sass:map";
 @use "sass:list";
+@use "sass:math";
 
 @mixin expand-sizes($ext) {
   @each $type, $prefix in ("p": "padding", "m": "margin") {
     @each $letter, $side in map-merge($sides, $spans) {
-      // @for $x from 0 through 7 {
-      //   $size: #{pow(2, $x - 3)}rem;
-      $x: 0;
-      @each $size in $sizes {
+      @for $x from 0 through 7 {
+        $size: #{pow(2, $x - 3)}rem;
         .#{$type}#{$letter}#{$x}#{$ext} {
           @if $side == "horiz" {
             #{$prefix}-left: $size;
@@ -22,28 +21,26 @@
             #{$prefix}#{$side}: $size;
           }
         }
-        $x: $x + 1;
       }
     }
   }
-  $x: 0;
-  @each $size in $sizes {
+  @for $x from 0 through 7 {
+    $size: #{pow(2, $x - 3)}rem;
     .ga#{$x}#{$ext} {
       row-gap: $size;
       column-gap: $size;
     }
     .gv#{$x}#{$ext} { row-gap: $size; }
     .gh#{$x}#{$ext} { column-gap: $size; }
-    $x: $x + 1;
   }
 }
 
 @include expand-sizes("");
 
-@media ($breakpoint-medium) {
+@media #{$media-breakpoint-medium} {
   @include expand-sizes("-m");
 }
 
-@media ($breakpoint-large) {
+@media #{$media-breakpoint-large} {
   @include expand-sizes("-l");
 }
