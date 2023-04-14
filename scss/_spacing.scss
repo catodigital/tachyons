@@ -5,11 +5,19 @@
 @use "sass:list";
 @use "sass:math";
 
+@function get-size($x) {
+  @if $x > 0 {
+    @return #{math.pow(2, $x - 3)}rem;
+  } @else {
+    @return 0;
+  }
+}
+
 @mixin expand-sizes($ext) {
   @each $type, $prefix in ("p": "padding", "m": "margin") {
     @each $letter, $side in map-merge($sides, $spans) {
       @for $x from 0 through 7 {
-        $size: #{pow(2, $x - 3)}rem;
+        $size: get-size($x);
         .#{$type}#{$letter}#{$x}#{$ext} {
           @if $side == "horiz" {
             #{$prefix}-left: $size;
@@ -25,7 +33,7 @@
     }
   }
   @for $x from 0 through 7 {
-    $size: #{pow(2, $x - 3)}rem;
+    $size: get-size($x);
     .ga#{$x}#{$ext} {
       row-gap: $size;
       column-gap: $size;
