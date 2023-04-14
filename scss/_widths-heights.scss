@@ -1,0 +1,43 @@
+/*
+
+   WIDTH & HEIGHT
+
+   Modifiers
+     -10  = literal value 10%
+     -25  = literal value 25%
+     -33  = literal value 33%
+     -50  = literal value 50%
+     -66  = literal value 66%
+     -75  = literal value 75%
+     -100 = literal value 100%
+     -auto = string value auto
+
+   Media Query Extensions:
+     -m = medium
+     -l = large
+
+*/
+
+@use "vars";
+
+@mixin expand-width-height($ext) {
+  @each $letter, $direction in ("w": "width", "h": "height") {
+    @each $size in (10, 25, 33, 50, 66, 75, 100) {
+      @each $ltype, $ptype in ("": "", "min": "min-", "max": "max-") {
+        .#{$letter}#{$ltype}-#{$size}#{$ext} { #{$ptype}#{$direction}: #{$size}#{"%"}; }
+        .v#{$letter}#{$ltype}-#{$size}#{$ext} { #{$ptype}#{$direction}: #{$size}v#{$letter}; }
+      }
+    }
+    .#{$letter}-auto#{$ext} { #{$direction}: auto; }
+    .#{$letter}min-auto#{$ext} { min-#{$direction}: auto; }
+    .#{$letter}max-auto#{$ext} { max-#{$direction}: auto; }
+  }
+}
+
+@include expand-width-height("");
+@media ($breakpoint-medium) {
+  @include expand-width-height("-m");
+}
+@media ($breakpoint-medium) {
+  @include expand-width-height("-l");
+}

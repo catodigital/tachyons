@@ -1,3 +1,19 @@
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+
 $size-0: 0;
 $size-1: .25rem;
 $size-2: .5rem;
@@ -8,10 +24,21 @@ $size-6: 8rem;
 $size-7: 16rem;
 $size-8: 32rem;
 $sizes: $size-0, $size-1, $size-2, $size-3, $size-4, $size-5, $size-6, $size-7, $size-8;
-// is there a way to get the length of a list in scss? For now just this
-$nsizes: 8;
+// // is there a way to get the length of a list in scss? For now just this
+// $nsizes: 8;
 
-$sides: ("a": "", "l": "-left", "r": "-right", "b": "-bottom", "t": "-top");
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+$sides: ("l": "-left", "r": "-right", "b": "-bottom", "t": "-top");
+$spans: ("a": "", "v": "vert", "h": "horiz");
 
 $breakpoint-small: 30em;
 $breakpoint-medium: 48em;

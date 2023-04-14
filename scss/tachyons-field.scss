@@ -51,7 +51,6 @@
 @import 'coordinates';
 @import 'clears';
 @import 'display';
-@import 'gap';
 @import 'grid-template-columns';
 @import 'grid-column';
 @import 'grid-row';
@@ -70,14 +69,11 @@
 @import 'font-style';
 @import 'font-weight';
 @import 'forms';
-@import 'heights';
 @import 'letter-spacing';
 @import 'line-height';
 @import 'links';
 @import 'lists';
-@import 'max-widths';
-@import 'widths';
-@import 'min-widths';
+@import 'widths-heights';
 @import 'overflow';
 @import 'position';
 @import 'opacity';
