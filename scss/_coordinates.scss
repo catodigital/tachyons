@@ -1,3 +1,4 @@
+@use "vars";
 /*
 
    COORDINATES
@@ -58,7 +59,7 @@
   left: 0;
 }
 
-@media (--breakpoint-small) {
+@media #{$media-breakpoint-small} {
   .top-0-s     { top:   0; }
   .left-0-s    { left:  0; }
   .right-0-s   { right: 0; }
@@ -87,7 +88,7 @@
   }
 }
 
-@media (--breakpoint-medium) {
+@media #{$media-breakpoint-medium} {
   .top-0-m     { top:   0; }
   .left-0-m    { left:  0; }
   .right-0-m   { right: 0; }
@@ -116,7 +117,7 @@
   }
 }
 
-@media (--breakpoint-large) {
+@media #{$media-breakpoint-large} {
   .top-0-l     { top:   0; }
   .left-0-l    { left:  0; }
   .right-0-l   { right: 0; }

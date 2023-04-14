@@ -1,3 +1,4 @@
+@use "vars";
 /*
 
    LINE HEIGHT / LEADING
@@ -14,19 +15,19 @@
   .lh-title { line-height: 1.25; }
   .lh-copy  { line-height: 1.5; }
 
-@media (--breakpoint-small) {
+@media #{$media-breakpoint-small} {
   .lh-solid-s { line-height: 1; }
   .lh-title-s { line-height: 1.25; }
   .lh-copy-s  { line-height: 1.5; }
 }
 
-@media (--breakpoint-medium) {
+@media #{$media-breakpoint-medium} {
   .lh-solid-m { line-height: 1; }
   .lh-title-m { line-height: 1.25; }
   .lh-copy-m  { line-height: 1.5; }
 }
 
-@media (--breakpoint-large) {
+@media #{$media-breakpoint-large} {
   .lh-solid-l { line-height: 1; }
   .lh-title-l { line-height: 1.25; }
   .lh-copy-l  { line-height: 1.5; }

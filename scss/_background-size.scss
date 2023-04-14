@@ -1,3 +1,4 @@
+@use "vars";
 /*
 
    BACKGROUND SIZE
@@ -18,17 +19,17 @@
   .cover { background-size: cover!important; }
   .contain { background-size: contain!important; }
 
-@media (--breakpoint-small) {
+@media #{$media-breakpoint-small} {
   .cover-s { background-size: cover!important; }
   .contain-s { background-size: contain!important; }
 }
 
-@media (--breakpoint-medium) {
+@media #{$media-breakpoint-medium} {
   .cover-m { background-size: cover!important; }
   .contain-m { background-size: contain!important; }
 }
 
-@media (--breakpoint-large) {
+@media #{$media-breakpoint-large} {
   .cover-l { background-size: cover!important; }
   .contain-l { background-size: contain!important; }
 }

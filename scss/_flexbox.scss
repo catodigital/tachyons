@@ -1,3 +1,4 @@
+@use "vars";
 /*
 
   FLEXBOX
@@ -26,7 +27,7 @@
 .flex-shrink-0 { flex-shrink: 0; }
 .flex-shrink-1 { flex-shrink: 1; }
 
-@media (--breakpoint-small) {
+@media #{$media-breakpoint-small} {
   .flex-s { display: flex; }
   .inline-flex-s { display: inline-flex; }
   .flex-auto-s {
@@ -45,7 +46,7 @@
   .flex-shrink-0-s { flex-shrink: 0; }
   .flex-shrink-1-s { flex-shrink: 1; }
 }
-@media (--breakpoint-medium) {
+@media #{$media-breakpoint-medium} {
   .flex-m { display: flex; }
   .inline-flex-m { display: inline-flex; }
   .flex-auto-m {
@@ -63,7 +64,7 @@
   .flex-shrink-1-m { flex-shrink: 1; }
 }
 
-@media (--breakpoint-large) {
+@media #{$media-breakpoint-large} {
   .flex-l { display: flex; }
   .inline-flex-l { display: inline-flex; }
   .flex-auto-l {

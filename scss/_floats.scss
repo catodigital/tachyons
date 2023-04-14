@@ -1,3 +1,4 @@
+@use "vars";
 /*
 
    FLOATS
@@ -30,19 +31,19 @@
 .fr { float: right; }
 .fn { float: none; }
 
-@media (--breakpoint-small) {
+@media #{$media-breakpoint-small} {
   .fl-s { float: left; }
   .fr-s { float: right;  }
   .fn-s { float: none; }
 }
 
-@media (--breakpoint-medium) {
+@media #{$media-breakpoint-medium} {
   .fl-m { float: left;  }
   .fr-m { float: right;  }
   .fn-m { float: none; }
 }
 
-@media (--breakpoint-large) {
+@media #{$media-breakpoint-large} {
   .fl-l { float: left; }
   .fr-l { float: right; }
   .fn-l { float: none; }

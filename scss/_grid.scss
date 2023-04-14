@@ -1,3 +1,4 @@
+@use "vars";
 /*
 
   Grid
@@ -14,10 +15,10 @@
 .flow-dense { grid-auto-flow: dense; }
 
 
-@media (--breakpoint-small) {
+@media #{$media-breakpoint-small} {
 }
-@media (--breakpoint-medium) {
+@media #{$media-breakpoint-medium} {
 }
 
-@media (--breakpoint-large) {
+@media #{$media-breakpoint-large} {
 }

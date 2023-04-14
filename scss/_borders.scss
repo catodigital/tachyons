@@ -1,3 +1,4 @@
+@use "vars";
 /*
 
     BORDERS
@@ -29,7 +30,7 @@
   .bn { border-style: none; border-width: 0; }
 
 
-@media (--breakpoint-small) {
+@media #{$media-breakpoint-small} {
   .ba-s { border-style: solid; border-width: 1px; }
   .bt-s { border-top-style: solid; border-top-width: 1px; }
   .br-s { border-right-style: solid; border-right-width: 1px; }
@@ -38,7 +39,7 @@
   .bn-s { border-style: none; border-width: 0; }
 }
 
-@media (--breakpoint-medium) {
+@media #{$media-breakpoint-medium} {
   .ba-m { border-style: solid; border-width: 1px; }
   .bt-m { border-top-style: solid; border-top-width: 1px; }
   .br-m { border-right-style: solid; border-right-width: 1px; }
@@ -47,7 +48,7 @@
   .bn-m { border-style: none; border-width: 0; }
 }
 
-@media (--breakpoint-large) {
+@media #{$media-breakpoint-large} {
   .ba-l { border-style: solid; border-width: 1px; }
   .bt-l { border-top-style: solid; border-top-width: 1px; }
   .br-l { border-right-style: solid; border-right-width: 1px; }

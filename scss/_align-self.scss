@@ -1,3 +1,4 @@
+@use "vars";
 /*
 
   ALIGN-SELF
@@ -15,7 +16,7 @@
 .self-baseline { align-self: baseline; }
 .self-stretch  { align-self: stretch; }
 
-@media (--breakpoint-small) {
+@media #{$media-breakpoint-small} {
   .self-start-s { align-self: flex-start; }
   .self-end-s { align-self: flex-end; }
   .self-center-s { align-self: center; }
@@ -23,7 +24,7 @@
   .self-stretch-s { align-self: stretch; }
 }
 
-@media (--breakpoint-medium) {
+@media #{$media-breakpoint-medium} {
   .self-start-m { align-self: flex-start; }
   .self-end-m { align-self: flex-end; }
   .self-center-m { align-self: center; }
@@ -32,7 +33,7 @@
 
 }
 
-@media (--breakpoint-large) {
+@media #{$media-breakpoint-large} {
   .self-start-l { align-self: flex-start; }
   .self-end-l { align-self: flex-end; }
   .self-center-l { align-self: center; }

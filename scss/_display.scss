@@ -1,3 +1,4 @@
+@use "vars";
 /*
 
    DISPLAY
@@ -38,7 +39,7 @@
   display: inline-grid;
 }
 
-@media (--breakpoint-small) {
+@media #{$media-breakpoint-small} {
   .dn-s {                display: none; }
   .di-s {                display: inline; }
   .db-s {                display: block; }
@@ -56,7 +57,7 @@
   }
 }
 
-@media (--breakpoint-medium) {
+@media #{$media-breakpoint-medium} {
 
   .dn-m {                display: none; }
   .di-m {                display: inline; }
@@ -75,7 +76,7 @@
   }
 }
 
-@media (--breakpoint-large) {
+@media #{$media-breakpoint-large} {
   .dn-l {                display: none; }
   .di-l {                display: inline; }
   .db-l {                display: block; }

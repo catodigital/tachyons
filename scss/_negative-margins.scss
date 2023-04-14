@@ -1,3 +1,4 @@
+@use "vars";
 /* Variables */
 
 :root {
@@ -81,8 +82,7 @@
 .nt6 { margin-top: calc(-1 * var(--spacing-6)); }
 .nt7 { margin-top: calc(-1 * var(--spacing-7)); }
 
-@media (--breakpoint-2) {
-
+@media #{$media-breakpoint-small} {
   .na1-s { margin: calc(-1 * var(--spacing-1)); }
   .na2-s { margin: calc(-1 * var(--spacing-2)); }
   .na3-s { margin: calc(-1 * var(--spacing-3)); }
@@ -125,7 +125,7 @@
 
 }
 
-@media (--breakpoint-3) {
+@media #{$media-breakpoint-medium} {
   .na1-m { margin: calc(-1 * var(--spacing-1)); }
   .na2-m { margin: calc(-1 * var(--spacing-2)); }
   .na3-m { margin: calc(-1 * var(--spacing-3)); }
@@ -168,7 +168,7 @@
 
 }
 
-@media (--breakpoint-large) {
+@media #{$media-breakpoint-large} {
   .na1-l { margin: calc(-1 * var(--spacing-1)); }
   .na2-l { margin: calc(-1 * var(--spacing-2)); }
   .na3-l { margin: calc(-1 * var(--spacing-3)); }
@@ -209,4 +209,3 @@
   .nt6-l { margin-top: calc(-1 * var(--spacing-6)); }
   .nt7-l { margin-top: calc(-1 * var(--spacing-7)); }
 }
-

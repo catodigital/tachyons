@@ -48,6 +48,31 @@ $ /Users/brandon/share/dev/cato/tachyons-field/node_modules/.bin/sass scss/tachy
      b = bottom
      l = left
 */
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -360,40 +385,30 @@ template {
 /* Variables */
 /* Importing here will allow you to override any variables in the modules */
 /*
+   SPACING
 
-  CUSTOM MEDIA QUERIES
+   An eight step powers of two scale ranging from 0 to 16rem.
 
-  Media query values can be changed to fit your own content.
-  There are no magic bullets when it comes to media query width values.
-  They should be declared in em units - and they should be set to meet
-  the needs of your content. You can also add additional media queries,
-  or remove some of the existing ones.
-
-  These media queries can be referenced like so:
-
-  @media (--breakpoint-small) {
-    .example-s {
-      background-color: red;
-    }
-  }
-
-  @media (--breakpoint-medium) {
-    .example-m {
-      background-color: red;
-    }
-  }
-
-  @media (--breakpoint-large) {
-    .example-l {
-      background-color: red;
-    }
-  }
-
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
 */
-/* Media Queries */
-@custom-media --breakpoint-small screen and (min-width: 30em);
-@custom-media --breakpoint-medium screen and (min-width: 48em);
-@custom-media --breakpoint-large screen and (min-width: 60em);
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
    Tachyons
    COLOR VARIABLES
@@ -468,6 +483,31 @@ template {
 
 /* Modules */
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
   BOX SIZING
 
@@ -485,6 +525,31 @@ template {
   box-sizing: content-box;
 }
 
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    ASPECT RATIOS
@@ -536,7 +601,7 @@ template {
   aspect-ratio: 1/1;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .aspect-ratio-16x9-s {
     aspect-ratio: 16/9;
   }
@@ -572,7 +637,7 @@ template {
     aspect-ratio: 1/1;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .aspect-ratio-16x9-m {
     aspect-ratio: 16/9;
   }
@@ -608,7 +673,7 @@ template {
     aspect-ratio: 1/1;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .aspect-ratio-16x9-l {
     aspect-ratio: 16/9;
   }
@@ -645,6 +710,31 @@ template {
   }
 }
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
    IMAGES
    Docs: http://tachyons.io/docs/elements/images/
@@ -671,6 +761,31 @@ img.reponsive {
 }
 
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
    BACKGROUND SIZE
    Docs: http://tachyons.io/docs/themes/background-size/
@@ -693,7 +808,7 @@ img.reponsive {
   background-size: contain !important;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .cover-s {
     background-size: cover !important;
   }
@@ -701,7 +816,7 @@ img.reponsive {
     background-size: contain !important;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .cover-m {
     background-size: cover !important;
   }
@@ -709,7 +824,7 @@ img.reponsive {
     background-size: contain !important;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .cover-l {
     background-size: cover !important;
   }
@@ -717,6 +832,31 @@ img.reponsive {
     background-size: contain !important;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
     BACKGROUND POSITION
@@ -762,7 +902,7 @@ img.reponsive {
   background-position: center left;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .bg-center-s {
     background-repeat: no-repeat;
     background-position: center center;
@@ -784,7 +924,7 @@ img.reponsive {
     background-position: center left;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .bg-center-m {
     background-repeat: no-repeat;
     background-position: center center;
@@ -806,7 +946,7 @@ img.reponsive {
     background-position: center left;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .bg-center-l {
     background-repeat: no-repeat;
     background-position: center center;
@@ -829,6 +969,31 @@ img.reponsive {
   }
 }
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
    OUTLINES
 
@@ -850,7 +1015,7 @@ img.reponsive {
   outline: 0;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .outline-s {
     outline: 1px solid;
   }
@@ -861,7 +1026,7 @@ img.reponsive {
     outline: 0;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .outline-m {
     outline: 1px solid;
   }
@@ -872,7 +1037,7 @@ img.reponsive {
     outline: 0;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .outline-l {
     outline: 1px solid;
   }
@@ -883,6 +1048,31 @@ img.reponsive {
     outline: 0;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
     BORDERS
@@ -935,7 +1125,7 @@ img.reponsive {
   border-width: 0;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .ba-s {
     border-style: solid;
     border-width: 1px;
@@ -961,7 +1151,7 @@ img.reponsive {
     border-width: 0;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .ba-m {
     border-style: solid;
     border-width: 1px;
@@ -987,7 +1177,7 @@ img.reponsive {
     border-width: 0;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .ba-l {
     border-style: solid;
     border-width: 1px;
@@ -1013,6 +1203,31 @@ img.reponsive {
     border-width: 0;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    BORDER COLORS
@@ -1048,6 +1263,31 @@ img.reponsive {
   border-color: unset;
 }
 
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    BORDER RADIUS
@@ -1144,7 +1384,7 @@ img.reponsive {
   border-radius: unset;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .br0-s {
     border-radius: 0;
   }
@@ -1198,7 +1438,7 @@ img.reponsive {
     border-radius: unset;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .br0-m {
     border-radius: 0;
   }
@@ -1252,7 +1492,7 @@ img.reponsive {
     border-radius: unset;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .br0-l {
     border-radius: 0;
   }
@@ -1307,6 +1547,31 @@ img.reponsive {
   }
 }
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
    BORDER STYLES
    Docs: http://tachyons.io/docs/themes/borders/
@@ -1344,7 +1609,7 @@ img.reponsive {
   border-style: none;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .b--dotted-s {
     border-style: dotted;
   }
@@ -1358,7 +1623,7 @@ img.reponsive {
     border-style: none;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .b--dotted-m {
     border-style: dotted;
   }
@@ -1372,7 +1637,7 @@ img.reponsive {
     border-style: none;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .b--dotted-l {
     border-style: dotted;
   }
@@ -1386,6 +1651,31 @@ img.reponsive {
     border-style: none;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    BORDER WIDTHS
@@ -1444,7 +1734,7 @@ img.reponsive {
   border-left-width: 0;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .bw0-s {
     border-width: 0;
   }
@@ -1473,7 +1763,7 @@ img.reponsive {
     border-left-width: 0;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .bw0-m {
     border-width: 0;
   }
@@ -1502,7 +1792,7 @@ img.reponsive {
     border-left-width: 0;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .bw0-l {
     border-width: 0;
   }
@@ -1531,6 +1821,31 @@ img.reponsive {
     border-left-width: 0;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
   BOX-SHADOW
@@ -1599,7 +1914,7 @@ img.reponsive {
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09);
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .shadow-border-s {
     box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.125);
   }
@@ -1643,7 +1958,7 @@ img.reponsive {
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09);
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .shadow-border-m {
     box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.125);
   }
@@ -1687,7 +2002,7 @@ img.reponsive {
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09);
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .shadow-border-l {
     box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.125);
   }
@@ -1732,6 +2047,31 @@ img.reponsive {
   }
 }
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
    CODE
 
@@ -1741,6 +2081,31 @@ img.reponsive {
   overflow: auto;
 }
 
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    COORDINATES
@@ -1854,7 +2219,7 @@ img.reponsive {
   left: 0;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .top-0-s {
     top: 0;
   }
@@ -1922,7 +2287,7 @@ img.reponsive {
     left: 0;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .top-0-m {
     top: 0;
   }
@@ -1990,7 +2355,7 @@ img.reponsive {
     left: 0;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .top-0-l {
     top: 0;
   }
@@ -2059,6 +2424,31 @@ img.reponsive {
   }
 }
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
    CLEARFIX
    http://tachyons.io/docs/layout/clearfix/
@@ -2096,6 +2486,31 @@ img.reponsive {
   clear: none;
 }
 
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    DISPLAY
@@ -2153,7 +2568,7 @@ img.reponsive {
   display: inline-grid;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .dn-s {
     display: none;
   }
@@ -2181,7 +2596,7 @@ img.reponsive {
     display: inline-grid;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .dn-m {
     display: none;
   }
@@ -2209,7 +2624,7 @@ img.reponsive {
     display: inline-grid;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .dn-l {
     display: none;
   }
@@ -2237,6 +2652,31 @@ img.reponsive {
     display: inline-grid;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
   Grid Template Columns
@@ -2330,7 +2770,7 @@ img.reponsive {
   grid-template-columns: none;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .cols-1-s {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -2395,7 +2835,7 @@ img.reponsive {
     grid-template-columns: none;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .cols-1-m {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -2460,7 +2900,7 @@ img.reponsive {
     grid-template-columns: none;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .cols-1-l {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -2525,6 +2965,31 @@ img.reponsive {
     grid-template-columns: none;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
   Grid Column
@@ -2748,7 +3213,7 @@ img.reponsive {
   grid-column-end: 16;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .col-1-s {
     grid-column: span 1/span 1;
   }
@@ -2909,7 +3374,7 @@ img.reponsive {
     grid-column-end: 16;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .col-1-m {
     grid-column: span 1/span 1;
   }
@@ -3070,7 +3535,7 @@ img.reponsive {
     grid-column-end: 16;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .col-1-l {
     grid-column: span 1/span 1;
   }
@@ -3232,6 +3697,31 @@ img.reponsive {
   }
 }
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
   Grid Row
   Docs: http://tachyons.io/docs/layout/grid-column-row
@@ -3374,7 +3864,7 @@ img.reponsive {
   grid-row-end: 16;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .row-auto-s {
     grid-row: auto;
   }
@@ -3475,7 +3965,7 @@ img.reponsive {
     grid-row-end: 16;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .row-auto-m {
     grid-row: auto;
   }
@@ -3576,7 +4066,7 @@ img.reponsive {
     grid-row-end: 16;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .row-auto-l {
     grid-row: auto;
   }
@@ -3678,6 +4168,31 @@ img.reponsive {
   }
 }
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
   FILTER EFFECTS
   Docs: http://tachyons.io/docs/themes/hovers/
@@ -3706,6 +4221,31 @@ img.reponsive {
   filter: grayscale(100%);
 }
 
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
   FLEXBOX
@@ -3744,7 +4284,7 @@ img.reponsive {
   flex-shrink: 1;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .flex-s {
     display: flex;
   }
@@ -3772,7 +4312,7 @@ img.reponsive {
     flex-shrink: 1;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .flex-m {
     display: flex;
   }
@@ -3800,7 +4340,7 @@ img.reponsive {
     flex-shrink: 1;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .flex-l {
     display: flex;
   }
@@ -3829,6 +4369,31 @@ img.reponsive {
   }
 }
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
   FLEX-DIRECTION
 
@@ -3854,7 +4419,7 @@ img.reponsive {
   flex-direction: row-reverse;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .flex-column-s {
     flex-direction: column;
   }
@@ -3868,7 +4433,7 @@ img.reponsive {
     flex-direction: row-reverse;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .flex-column-m {
     flex-direction: column;
   }
@@ -3882,7 +4447,7 @@ img.reponsive {
     flex-direction: row-reverse;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .flex-column-l {
     flex-direction: column;
   }
@@ -3896,6 +4461,31 @@ img.reponsive {
     flex-direction: row-reverse;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
   FLEX-WRAP
@@ -3918,7 +4508,7 @@ img.reponsive {
   flex-wrap: wrap-reverse;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .flex-wrap-s {
     flex-wrap: wrap;
   }
@@ -3929,7 +4519,7 @@ img.reponsive {
     flex-wrap: wrap-reverse;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .flex-wrap-m {
     flex-wrap: wrap;
   }
@@ -3940,7 +4530,7 @@ img.reponsive {
     flex-wrap: wrap-reverse;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .flex-wrap-l {
     flex-wrap: wrap;
   }
@@ -3951,6 +4541,31 @@ img.reponsive {
     flex-wrap: wrap-reverse;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
   ALIGN-ITEMS
@@ -3981,7 +4596,7 @@ img.reponsive {
   align-items: stretch;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .items-start-s {
     align-items: flex-start;
   }
@@ -3998,7 +4613,7 @@ img.reponsive {
     align-items: stretch;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .items-start-m {
     align-items: flex-start;
   }
@@ -4015,7 +4630,7 @@ img.reponsive {
     align-items: stretch;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .items-start-l {
     align-items: flex-start;
   }
@@ -4032,6 +4647,31 @@ img.reponsive {
     align-items: stretch;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
   ALIGN-CONTENT
@@ -4069,7 +4709,7 @@ img.reponsive {
   align-content: stretch;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .content-start-s {
     align-content: flex-start;
   }
@@ -4089,7 +4729,7 @@ img.reponsive {
     align-content: stretch;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .content-start-m {
     align-content: flex-start;
   }
@@ -4109,7 +4749,7 @@ img.reponsive {
     align-content: stretch;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .content-start-l {
     align-content: flex-start;
   }
@@ -4129,6 +4769,31 @@ img.reponsive {
     align-content: stretch;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
   ALIGN-SELF
@@ -4159,7 +4824,7 @@ img.reponsive {
   align-self: stretch;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .self-start-s {
     align-self: flex-start;
   }
@@ -4176,7 +4841,7 @@ img.reponsive {
     align-self: stretch;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .self-start-m {
     align-self: flex-start;
   }
@@ -4193,7 +4858,7 @@ img.reponsive {
     align-self: stretch;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .self-start-l {
     align-self: flex-start;
   }
@@ -4210,6 +4875,31 @@ img.reponsive {
     align-self: stretch;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
   JUSTIFY-SELF
@@ -4238,7 +4928,7 @@ img.reponsive {
   justify-self: stretch;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .justify-self-start-s {
     justify-self: start;
   }
@@ -4252,7 +4942,7 @@ img.reponsive {
     justify-self: stretch;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .justify-self-start-m {
     justify-self: start;
   }
@@ -4266,7 +4956,7 @@ img.reponsive {
     justify-self: stretch;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .justify-self-start-l {
     justify-self: start;
   }
@@ -4280,6 +4970,31 @@ img.reponsive {
     justify-self: stretch;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
   JUSTIFY-CONTENT
@@ -4312,7 +5027,7 @@ img.reponsive {
   justify-content: space-around;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .justify-start-s {
     justify-content: flex-start;
   }
@@ -4329,7 +5044,7 @@ img.reponsive {
     justify-content: space-around;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .justify-start-m {
     justify-content: flex-start;
   }
@@ -4346,7 +5061,7 @@ img.reponsive {
     justify-content: space-around;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .justify-start-l {
     justify-content: flex-start;
   }
@@ -4363,6 +5078,31 @@ img.reponsive {
     justify-content: space-around;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
   ORDER
@@ -4413,7 +5153,7 @@ img.reponsive {
   order: 99999;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .order-0-s {
     order: 0;
   }
@@ -4445,7 +5185,7 @@ img.reponsive {
     order: 99999;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .order-0-m {
     order: 0;
   }
@@ -4477,7 +5217,7 @@ img.reponsive {
     order: 99999;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .order-0-l {
     order: 0;
   }
@@ -4509,6 +5249,31 @@ img.reponsive {
     order: 99999;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    FLOATS
@@ -4546,7 +5311,7 @@ img.reponsive {
   float: none;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .fl-s {
     float: left;
   }
@@ -4557,7 +5322,7 @@ img.reponsive {
     float: none;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .fl-m {
     float: left;
   }
@@ -4568,7 +5333,7 @@ img.reponsive {
     float: none;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .fl-l {
     float: left;
   }
@@ -4579,6 +5344,31 @@ img.reponsive {
     float: none;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    FONT FAMILY GROUPS
@@ -4638,6 +5428,31 @@ code, .code {
 }
 
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
    FONT STYLE
    Docs: http://tachyons.io/docs/typography/font-style/
@@ -4656,6 +5471,31 @@ code, .code {
   font-style: normal;
 }
 
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    FONT WEIGHT
@@ -4725,7 +5565,7 @@ code, .code {
   font-weight: 900;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .normal-s {
     font-weight: normal;
   }
@@ -4760,7 +5600,7 @@ code, .code {
     font-weight: 900;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .normal-m {
     font-weight: normal;
   }
@@ -4795,7 +5635,7 @@ code, .code {
     font-weight: 900;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .normal-l {
     font-weight: normal;
   }
@@ -4831,6 +5671,31 @@ code, .code {
   }
 }
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
    FORMS
 
@@ -4847,6 +5712,31 @@ code, .code {
   padding: 0;
 }
 
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    LETTER SPACING
@@ -4870,7 +5760,7 @@ code, .code {
   letter-spacing: 0.25em;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .tracked-s {
     letter-spacing: 0.1em;
   }
@@ -4881,7 +5771,7 @@ code, .code {
     letter-spacing: 0.25em;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .tracked-m {
     letter-spacing: 0.1em;
   }
@@ -4892,7 +5782,7 @@ code, .code {
     letter-spacing: 0.25em;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .tracked-l {
     letter-spacing: 0.1em;
   }
@@ -4903,6 +5793,31 @@ code, .code {
     letter-spacing: 0.25em;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    LINE HEIGHT / LEADING
@@ -4926,7 +5841,7 @@ code, .code {
   line-height: 1.5;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .lh-solid-s {
     line-height: 1;
   }
@@ -4937,7 +5852,7 @@ code, .code {
     line-height: 1.5;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .lh-solid-m {
     line-height: 1;
   }
@@ -4948,7 +5863,7 @@ code, .code {
     line-height: 1.5;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .lh-solid-l {
     line-height: 1;
   }
@@ -4959,6 +5874,31 @@ code, .code {
     line-height: 1.5;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    LINKS
@@ -4988,6 +5928,31 @@ code, .code {
   outline: 1px dotted currentColor;
 }
 
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    LISTS
@@ -5402,7 +6367,7 @@ code, .code {
   max-height: auto;
 }
 
-@media (48em) {
+@media screen and (min-width: 48em) {
   .w-10-m {
     width: 10%;
   }
@@ -5674,7 +6639,7 @@ code, .code {
     max-height: auto;
   }
 }
-@media (48em) {
+@media screen and (min-width: 60em) {
   .w-10-l {
     width: 10%;
   }
@@ -5947,6 +6912,31 @@ code, .code {
   }
 }
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
     OVERFLOW
 
@@ -6004,7 +6994,7 @@ code, .code {
   overflow-y: auto;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .overflow-visible-s {
     overflow: visible;
   }
@@ -6042,7 +7032,7 @@ code, .code {
     overflow-y: auto;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .overflow-visible-m {
     overflow: visible;
   }
@@ -6080,7 +7070,7 @@ code, .code {
     overflow-y: auto;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .overflow-visible-l {
     overflow: visible;
   }
@@ -6119,6 +7109,31 @@ code, .code {
   }
 }
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
    POSITIONING
    Docs: http://tachyons.io/docs/layout/position/
@@ -6149,7 +7164,7 @@ code, .code {
   position: sticky;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .static-s {
     position: static;
   }
@@ -6166,7 +7181,7 @@ code, .code {
     position: sticky;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .static-m {
     position: static;
   }
@@ -6183,7 +7198,7 @@ code, .code {
     position: sticky;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .static-l {
     position: static;
   }
@@ -6200,6 +7215,31 @@ code, .code {
     position: sticky;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
     OPACITY
@@ -6259,6 +7299,31 @@ code, .code {
 }
 
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
    ROTATIONS
 
@@ -6291,7 +7356,7 @@ code, .code {
   transform: rotate(315deg);
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .rotate-45-s {
     transform: rotate(45deg);
   }
@@ -6314,7 +7379,7 @@ code, .code {
     transform: rotate(315deg);
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .rotate-45-m {
     transform: rotate(45deg);
   }
@@ -6337,7 +7402,7 @@ code, .code {
     transform: rotate(315deg);
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .rotate-45-l {
     transform: rotate(45deg);
   }
@@ -6360,6 +7425,31 @@ code, .code {
     transform: rotate(315deg);
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
    SKINS
    Docs: http://tachyons.io/docs/themes/skins/
@@ -6848,1674 +7938,1514 @@ code, .code {
 */
 /* SPACING */
 .pl0 {
-  padding-left: 0;
+  padding-left: pow(2, -3)rem;
 }
 
 .pl1 {
-  padding-left: 0.25rem;
+  padding-left: pow(2, -2)rem;
 }
 
 .pl2 {
-  padding-left: 0.5rem;
+  padding-left: pow(2, -1)rem;
 }
 
 .pl3 {
-  padding-left: 1rem;
+  padding-left: pow(2, 0)rem;
 }
 
 .pl4 {
-  padding-left: 2rem;
+  padding-left: pow(2, 1)rem;
 }
 
 .pl5 {
-  padding-left: 4rem;
+  padding-left: pow(2, 2)rem;
 }
 
 .pl6 {
-  padding-left: 8rem;
+  padding-left: pow(2, 3)rem;
 }
 
 .pl7 {
-  padding-left: 16rem;
-}
-
-.pl8 {
-  padding-left: 32rem;
+  padding-left: pow(2, 4)rem;
 }
 
 .pr0 {
-  padding-right: 0;
+  padding-right: pow(2, -3)rem;
 }
 
 .pr1 {
-  padding-right: 0.25rem;
+  padding-right: pow(2, -2)rem;
 }
 
 .pr2 {
-  padding-right: 0.5rem;
+  padding-right: pow(2, -1)rem;
 }
 
 .pr3 {
-  padding-right: 1rem;
+  padding-right: pow(2, 0)rem;
 }
 
 .pr4 {
-  padding-right: 2rem;
+  padding-right: pow(2, 1)rem;
 }
 
 .pr5 {
-  padding-right: 4rem;
+  padding-right: pow(2, 2)rem;
 }
 
 .pr6 {
-  padding-right: 8rem;
+  padding-right: pow(2, 3)rem;
 }
 
 .pr7 {
-  padding-right: 16rem;
-}
-
-.pr8 {
-  padding-right: 32rem;
+  padding-right: pow(2, 4)rem;
 }
 
 .pb0 {
-  padding-bottom: 0;
+  padding-bottom: pow(2, -3)rem;
 }
 
 .pb1 {
-  padding-bottom: 0.25rem;
+  padding-bottom: pow(2, -2)rem;
 }
 
 .pb2 {
-  padding-bottom: 0.5rem;
+  padding-bottom: pow(2, -1)rem;
 }
 
 .pb3 {
-  padding-bottom: 1rem;
+  padding-bottom: pow(2, 0)rem;
 }
 
 .pb4 {
-  padding-bottom: 2rem;
+  padding-bottom: pow(2, 1)rem;
 }
 
 .pb5 {
-  padding-bottom: 4rem;
+  padding-bottom: pow(2, 2)rem;
 }
 
 .pb6 {
-  padding-bottom: 8rem;
+  padding-bottom: pow(2, 3)rem;
 }
 
 .pb7 {
-  padding-bottom: 16rem;
-}
-
-.pb8 {
-  padding-bottom: 32rem;
+  padding-bottom: pow(2, 4)rem;
 }
 
 .pt0 {
-  padding-top: 0;
+  padding-top: pow(2, -3)rem;
 }
 
 .pt1 {
-  padding-top: 0.25rem;
+  padding-top: pow(2, -2)rem;
 }
 
 .pt2 {
-  padding-top: 0.5rem;
+  padding-top: pow(2, -1)rem;
 }
 
 .pt3 {
-  padding-top: 1rem;
+  padding-top: pow(2, 0)rem;
 }
 
 .pt4 {
-  padding-top: 2rem;
+  padding-top: pow(2, 1)rem;
 }
 
 .pt5 {
-  padding-top: 4rem;
+  padding-top: pow(2, 2)rem;
 }
 
 .pt6 {
-  padding-top: 8rem;
+  padding-top: pow(2, 3)rem;
 }
 
 .pt7 {
-  padding-top: 16rem;
-}
-
-.pt8 {
-  padding-top: 32rem;
+  padding-top: pow(2, 4)rem;
 }
 
 .pa0 {
-  padding: 0;
+  padding: pow(2, -3)rem;
 }
 
 .pa1 {
-  padding: 0.25rem;
+  padding: pow(2, -2)rem;
 }
 
 .pa2 {
-  padding: 0.5rem;
+  padding: pow(2, -1)rem;
 }
 
 .pa3 {
-  padding: 1rem;
+  padding: pow(2, 0)rem;
 }
 
 .pa4 {
-  padding: 2rem;
+  padding: pow(2, 1)rem;
 }
 
 .pa5 {
-  padding: 4rem;
+  padding: pow(2, 2)rem;
 }
 
 .pa6 {
-  padding: 8rem;
+  padding: pow(2, 3)rem;
 }
 
 .pa7 {
-  padding: 16rem;
-}
-
-.pa8 {
-  padding: 32rem;
+  padding: pow(2, 4)rem;
 }
 
 .pv0 {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: pow(2, -3)rem;
+  padding-bottom: pow(2, -3)rem;
 }
 
 .pv1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding-top: pow(2, -2)rem;
+  padding-bottom: pow(2, -2)rem;
 }
 
 .pv2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: pow(2, -1)rem;
+  padding-bottom: pow(2, -1)rem;
 }
 
 .pv3 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: pow(2, 0)rem;
+  padding-bottom: pow(2, 0)rem;
 }
 
 .pv4 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: pow(2, 1)rem;
+  padding-bottom: pow(2, 1)rem;
 }
 
 .pv5 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: pow(2, 2)rem;
+  padding-bottom: pow(2, 2)rem;
 }
 
 .pv6 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: pow(2, 3)rem;
+  padding-bottom: pow(2, 3)rem;
 }
 
 .pv7 {
-  padding-top: 16rem;
-  padding-bottom: 16rem;
-}
-
-.pv8 {
-  padding-top: 32rem;
-  padding-bottom: 32rem;
+  padding-top: pow(2, 4)rem;
+  padding-bottom: pow(2, 4)rem;
 }
 
 .ph0 {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: pow(2, -3)rem;
+  padding-right: pow(2, -3)rem;
 }
 
 .ph1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  padding-left: pow(2, -2)rem;
+  padding-right: pow(2, -2)rem;
 }
 
 .ph2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: pow(2, -1)rem;
+  padding-right: pow(2, -1)rem;
 }
 
 .ph3 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: pow(2, 0)rem;
+  padding-right: pow(2, 0)rem;
 }
 
 .ph4 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: pow(2, 1)rem;
+  padding-right: pow(2, 1)rem;
 }
 
 .ph5 {
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: pow(2, 2)rem;
+  padding-right: pow(2, 2)rem;
 }
 
 .ph6 {
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding-left: pow(2, 3)rem;
+  padding-right: pow(2, 3)rem;
 }
 
 .ph7 {
-  padding-left: 16rem;
-  padding-right: 16rem;
-}
-
-.ph8 {
-  padding-left: 32rem;
-  padding-right: 32rem;
+  padding-left: pow(2, 4)rem;
+  padding-right: pow(2, 4)rem;
 }
 
 .ml0 {
-  margin-left: 0;
+  margin-left: pow(2, -3)rem;
 }
 
 .ml1 {
-  margin-left: 0.25rem;
+  margin-left: pow(2, -2)rem;
 }
 
 .ml2 {
-  margin-left: 0.5rem;
+  margin-left: pow(2, -1)rem;
 }
 
 .ml3 {
-  margin-left: 1rem;
+  margin-left: pow(2, 0)rem;
 }
 
 .ml4 {
-  margin-left: 2rem;
+  margin-left: pow(2, 1)rem;
 }
 
 .ml5 {
-  margin-left: 4rem;
+  margin-left: pow(2, 2)rem;
 }
 
 .ml6 {
-  margin-left: 8rem;
+  margin-left: pow(2, 3)rem;
 }
 
 .ml7 {
-  margin-left: 16rem;
-}
-
-.ml8 {
-  margin-left: 32rem;
+  margin-left: pow(2, 4)rem;
 }
 
 .mr0 {
-  margin-right: 0;
+  margin-right: pow(2, -3)rem;
 }
 
 .mr1 {
-  margin-right: 0.25rem;
+  margin-right: pow(2, -2)rem;
 }
 
 .mr2 {
-  margin-right: 0.5rem;
+  margin-right: pow(2, -1)rem;
 }
 
 .mr3 {
-  margin-right: 1rem;
+  margin-right: pow(2, 0)rem;
 }
 
 .mr4 {
-  margin-right: 2rem;
+  margin-right: pow(2, 1)rem;
 }
 
 .mr5 {
-  margin-right: 4rem;
+  margin-right: pow(2, 2)rem;
 }
 
 .mr6 {
-  margin-right: 8rem;
+  margin-right: pow(2, 3)rem;
 }
 
 .mr7 {
-  margin-right: 16rem;
-}
-
-.mr8 {
-  margin-right: 32rem;
+  margin-right: pow(2, 4)rem;
 }
 
 .mb0 {
-  margin-bottom: 0;
+  margin-bottom: pow(2, -3)rem;
 }
 
 .mb1 {
-  margin-bottom: 0.25rem;
+  margin-bottom: pow(2, -2)rem;
 }
 
 .mb2 {
-  margin-bottom: 0.5rem;
+  margin-bottom: pow(2, -1)rem;
 }
 
 .mb3 {
-  margin-bottom: 1rem;
+  margin-bottom: pow(2, 0)rem;
 }
 
 .mb4 {
-  margin-bottom: 2rem;
+  margin-bottom: pow(2, 1)rem;
 }
 
 .mb5 {
-  margin-bottom: 4rem;
+  margin-bottom: pow(2, 2)rem;
 }
 
 .mb6 {
-  margin-bottom: 8rem;
+  margin-bottom: pow(2, 3)rem;
 }
 
 .mb7 {
-  margin-bottom: 16rem;
-}
-
-.mb8 {
-  margin-bottom: 32rem;
+  margin-bottom: pow(2, 4)rem;
 }
 
 .mt0 {
-  margin-top: 0;
+  margin-top: pow(2, -3)rem;
 }
 
 .mt1 {
-  margin-top: 0.25rem;
+  margin-top: pow(2, -2)rem;
 }
 
 .mt2 {
-  margin-top: 0.5rem;
+  margin-top: pow(2, -1)rem;
 }
 
 .mt3 {
-  margin-top: 1rem;
+  margin-top: pow(2, 0)rem;
 }
 
 .mt4 {
-  margin-top: 2rem;
+  margin-top: pow(2, 1)rem;
 }
 
 .mt5 {
-  margin-top: 4rem;
+  margin-top: pow(2, 2)rem;
 }
 
 .mt6 {
-  margin-top: 8rem;
+  margin-top: pow(2, 3)rem;
 }
 
 .mt7 {
-  margin-top: 16rem;
-}
-
-.mt8 {
-  margin-top: 32rem;
+  margin-top: pow(2, 4)rem;
 }
 
 .ma0 {
-  margin: 0;
+  margin: pow(2, -3)rem;
 }
 
 .ma1 {
-  margin: 0.25rem;
+  margin: pow(2, -2)rem;
 }
 
 .ma2 {
-  margin: 0.5rem;
+  margin: pow(2, -1)rem;
 }
 
 .ma3 {
-  margin: 1rem;
+  margin: pow(2, 0)rem;
 }
 
 .ma4 {
-  margin: 2rem;
+  margin: pow(2, 1)rem;
 }
 
 .ma5 {
-  margin: 4rem;
+  margin: pow(2, 2)rem;
 }
 
 .ma6 {
-  margin: 8rem;
+  margin: pow(2, 3)rem;
 }
 
 .ma7 {
-  margin: 16rem;
-}
-
-.ma8 {
-  margin: 32rem;
+  margin: pow(2, 4)rem;
 }
 
 .mv0 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: pow(2, -3)rem;
+  margin-bottom: pow(2, -3)rem;
 }
 
 .mv1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: pow(2, -2)rem;
+  margin-bottom: pow(2, -2)rem;
 }
 
 .mv2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: pow(2, -1)rem;
+  margin-bottom: pow(2, -1)rem;
 }
 
 .mv3 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: pow(2, 0)rem;
+  margin-bottom: pow(2, 0)rem;
 }
 
 .mv4 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: pow(2, 1)rem;
+  margin-bottom: pow(2, 1)rem;
 }
 
 .mv5 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: pow(2, 2)rem;
+  margin-bottom: pow(2, 2)rem;
 }
 
 .mv6 {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-top: pow(2, 3)rem;
+  margin-bottom: pow(2, 3)rem;
 }
 
 .mv7 {
-  margin-top: 16rem;
-  margin-bottom: 16rem;
-}
-
-.mv8 {
-  margin-top: 32rem;
-  margin-bottom: 32rem;
+  margin-top: pow(2, 4)rem;
+  margin-bottom: pow(2, 4)rem;
 }
 
 .mh0 {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: pow(2, -3)rem;
+  margin-right: pow(2, -3)rem;
 }
 
 .mh1 {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
+  margin-left: pow(2, -2)rem;
+  margin-right: pow(2, -2)rem;
 }
 
 .mh2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: pow(2, -1)rem;
+  margin-right: pow(2, -1)rem;
 }
 
 .mh3 {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: pow(2, 0)rem;
+  margin-right: pow(2, 0)rem;
 }
 
 .mh4 {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: pow(2, 1)rem;
+  margin-right: pow(2, 1)rem;
 }
 
 .mh5 {
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin-left: pow(2, 2)rem;
+  margin-right: pow(2, 2)rem;
 }
 
 .mh6 {
-  margin-left: 8rem;
-  margin-right: 8rem;
+  margin-left: pow(2, 3)rem;
+  margin-right: pow(2, 3)rem;
 }
 
 .mh7 {
-  margin-left: 16rem;
-  margin-right: 16rem;
-}
-
-.mh8 {
-  margin-left: 32rem;
-  margin-right: 32rem;
+  margin-left: pow(2, 4)rem;
+  margin-right: pow(2, 4)rem;
 }
 
 .ga0 {
-  row-gap: 0;
-  column-gap: 0;
+  row-gap: pow(2, -3)rem;
+  column-gap: pow(2, -3)rem;
 }
 
 .gv0 {
-  row-gap: 0;
+  row-gap: pow(2, -3)rem;
 }
 
 .gh0 {
-  column-gap: 0;
+  column-gap: pow(2, -3)rem;
 }
 
 .ga1 {
-  row-gap: 0.25rem;
-  column-gap: 0.25rem;
+  row-gap: pow(2, -2)rem;
+  column-gap: pow(2, -2)rem;
 }
 
 .gv1 {
-  row-gap: 0.25rem;
+  row-gap: pow(2, -2)rem;
 }
 
 .gh1 {
-  column-gap: 0.25rem;
+  column-gap: pow(2, -2)rem;
 }
 
 .ga2 {
-  row-gap: 0.5rem;
-  column-gap: 0.5rem;
+  row-gap: pow(2, -1)rem;
+  column-gap: pow(2, -1)rem;
 }
 
 .gv2 {
-  row-gap: 0.5rem;
+  row-gap: pow(2, -1)rem;
 }
 
 .gh2 {
-  column-gap: 0.5rem;
+  column-gap: pow(2, -1)rem;
 }
 
 .ga3 {
-  row-gap: 1rem;
-  column-gap: 1rem;
+  row-gap: pow(2, 0)rem;
+  column-gap: pow(2, 0)rem;
 }
 
 .gv3 {
-  row-gap: 1rem;
+  row-gap: pow(2, 0)rem;
 }
 
 .gh3 {
-  column-gap: 1rem;
+  column-gap: pow(2, 0)rem;
 }
 
 .ga4 {
-  row-gap: 2rem;
-  column-gap: 2rem;
+  row-gap: pow(2, 1)rem;
+  column-gap: pow(2, 1)rem;
 }
 
 .gv4 {
-  row-gap: 2rem;
+  row-gap: pow(2, 1)rem;
 }
 
 .gh4 {
-  column-gap: 2rem;
+  column-gap: pow(2, 1)rem;
 }
 
 .ga5 {
-  row-gap: 4rem;
-  column-gap: 4rem;
+  row-gap: pow(2, 2)rem;
+  column-gap: pow(2, 2)rem;
 }
 
 .gv5 {
-  row-gap: 4rem;
+  row-gap: pow(2, 2)rem;
 }
 
 .gh5 {
-  column-gap: 4rem;
+  column-gap: pow(2, 2)rem;
 }
 
 .ga6 {
-  row-gap: 8rem;
-  column-gap: 8rem;
+  row-gap: pow(2, 3)rem;
+  column-gap: pow(2, 3)rem;
 }
 
 .gv6 {
-  row-gap: 8rem;
+  row-gap: pow(2, 3)rem;
 }
 
 .gh6 {
-  column-gap: 8rem;
+  column-gap: pow(2, 3)rem;
 }
 
 .ga7 {
-  row-gap: 16rem;
-  column-gap: 16rem;
+  row-gap: pow(2, 4)rem;
+  column-gap: pow(2, 4)rem;
 }
 
 .gv7 {
-  row-gap: 16rem;
+  row-gap: pow(2, 4)rem;
 }
 
 .gh7 {
-  column-gap: 16rem;
+  column-gap: pow(2, 4)rem;
 }
 
-.ga8 {
-  row-gap: 32rem;
-  column-gap: 32rem;
-}
-
-.gv8 {
-  row-gap: 32rem;
-}
-
-.gh8 {
-  column-gap: 32rem;
-}
-
-@media (48em) {
+@media screen and (min-width: 48em) {
   .pl0-m {
-    padding-left: 0;
+    padding-left: pow(2, -3)rem;
   }
   .pl1-m {
-    padding-left: 0.25rem;
+    padding-left: pow(2, -2)rem;
   }
   .pl2-m {
-    padding-left: 0.5rem;
+    padding-left: pow(2, -1)rem;
   }
   .pl3-m {
-    padding-left: 1rem;
+    padding-left: pow(2, 0)rem;
   }
   .pl4-m {
-    padding-left: 2rem;
+    padding-left: pow(2, 1)rem;
   }
   .pl5-m {
-    padding-left: 4rem;
+    padding-left: pow(2, 2)rem;
   }
   .pl6-m {
-    padding-left: 8rem;
+    padding-left: pow(2, 3)rem;
   }
   .pl7-m {
-    padding-left: 16rem;
-  }
-  .pl8-m {
-    padding-left: 32rem;
+    padding-left: pow(2, 4)rem;
   }
   .pr0-m {
-    padding-right: 0;
+    padding-right: pow(2, -3)rem;
   }
   .pr1-m {
-    padding-right: 0.25rem;
+    padding-right: pow(2, -2)rem;
   }
   .pr2-m {
-    padding-right: 0.5rem;
+    padding-right: pow(2, -1)rem;
   }
   .pr3-m {
-    padding-right: 1rem;
+    padding-right: pow(2, 0)rem;
   }
   .pr4-m {
-    padding-right: 2rem;
+    padding-right: pow(2, 1)rem;
   }
   .pr5-m {
-    padding-right: 4rem;
+    padding-right: pow(2, 2)rem;
   }
   .pr6-m {
-    padding-right: 8rem;
+    padding-right: pow(2, 3)rem;
   }
   .pr7-m {
-    padding-right: 16rem;
-  }
-  .pr8-m {
-    padding-right: 32rem;
+    padding-right: pow(2, 4)rem;
   }
   .pb0-m {
-    padding-bottom: 0;
+    padding-bottom: pow(2, -3)rem;
   }
   .pb1-m {
-    padding-bottom: 0.25rem;
+    padding-bottom: pow(2, -2)rem;
   }
   .pb2-m {
-    padding-bottom: 0.5rem;
+    padding-bottom: pow(2, -1)rem;
   }
   .pb3-m {
-    padding-bottom: 1rem;
+    padding-bottom: pow(2, 0)rem;
   }
   .pb4-m {
-    padding-bottom: 2rem;
+    padding-bottom: pow(2, 1)rem;
   }
   .pb5-m {
-    padding-bottom: 4rem;
+    padding-bottom: pow(2, 2)rem;
   }
   .pb6-m {
-    padding-bottom: 8rem;
+    padding-bottom: pow(2, 3)rem;
   }
   .pb7-m {
-    padding-bottom: 16rem;
-  }
-  .pb8-m {
-    padding-bottom: 32rem;
+    padding-bottom: pow(2, 4)rem;
   }
   .pt0-m {
-    padding-top: 0;
+    padding-top: pow(2, -3)rem;
   }
   .pt1-m {
-    padding-top: 0.25rem;
+    padding-top: pow(2, -2)rem;
   }
   .pt2-m {
-    padding-top: 0.5rem;
+    padding-top: pow(2, -1)rem;
   }
   .pt3-m {
-    padding-top: 1rem;
+    padding-top: pow(2, 0)rem;
   }
   .pt4-m {
-    padding-top: 2rem;
+    padding-top: pow(2, 1)rem;
   }
   .pt5-m {
-    padding-top: 4rem;
+    padding-top: pow(2, 2)rem;
   }
   .pt6-m {
-    padding-top: 8rem;
+    padding-top: pow(2, 3)rem;
   }
   .pt7-m {
-    padding-top: 16rem;
-  }
-  .pt8-m {
-    padding-top: 32rem;
+    padding-top: pow(2, 4)rem;
   }
   .pa0-m {
-    padding: 0;
+    padding: pow(2, -3)rem;
   }
   .pa1-m {
-    padding: 0.25rem;
+    padding: pow(2, -2)rem;
   }
   .pa2-m {
-    padding: 0.5rem;
+    padding: pow(2, -1)rem;
   }
   .pa3-m {
-    padding: 1rem;
+    padding: pow(2, 0)rem;
   }
   .pa4-m {
-    padding: 2rem;
+    padding: pow(2, 1)rem;
   }
   .pa5-m {
-    padding: 4rem;
+    padding: pow(2, 2)rem;
   }
   .pa6-m {
-    padding: 8rem;
+    padding: pow(2, 3)rem;
   }
   .pa7-m {
-    padding: 16rem;
-  }
-  .pa8-m {
-    padding: 32rem;
+    padding: pow(2, 4)rem;
   }
   .pv0-m {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: pow(2, -3)rem;
+    padding-bottom: pow(2, -3)rem;
   }
   .pv1-m {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding-top: pow(2, -2)rem;
+    padding-bottom: pow(2, -2)rem;
   }
   .pv2-m {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: pow(2, -1)rem;
+    padding-bottom: pow(2, -1)rem;
   }
   .pv3-m {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: pow(2, 0)rem;
+    padding-bottom: pow(2, 0)rem;
   }
   .pv4-m {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: pow(2, 1)rem;
+    padding-bottom: pow(2, 1)rem;
   }
   .pv5-m {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: pow(2, 2)rem;
+    padding-bottom: pow(2, 2)rem;
   }
   .pv6-m {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: pow(2, 3)rem;
+    padding-bottom: pow(2, 3)rem;
   }
   .pv7-m {
-    padding-top: 16rem;
-    padding-bottom: 16rem;
-  }
-  .pv8-m {
-    padding-top: 32rem;
-    padding-bottom: 32rem;
+    padding-top: pow(2, 4)rem;
+    padding-bottom: pow(2, 4)rem;
   }
   .ph0-m {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: pow(2, -3)rem;
+    padding-right: pow(2, -3)rem;
   }
   .ph1-m {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+    padding-left: pow(2, -2)rem;
+    padding-right: pow(2, -2)rem;
   }
   .ph2-m {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: pow(2, -1)rem;
+    padding-right: pow(2, -1)rem;
   }
   .ph3-m {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: pow(2, 0)rem;
+    padding-right: pow(2, 0)rem;
   }
   .ph4-m {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: pow(2, 1)rem;
+    padding-right: pow(2, 1)rem;
   }
   .ph5-m {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: pow(2, 2)rem;
+    padding-right: pow(2, 2)rem;
   }
   .ph6-m {
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: pow(2, 3)rem;
+    padding-right: pow(2, 3)rem;
   }
   .ph7-m {
-    padding-left: 16rem;
-    padding-right: 16rem;
-  }
-  .ph8-m {
-    padding-left: 32rem;
-    padding-right: 32rem;
+    padding-left: pow(2, 4)rem;
+    padding-right: pow(2, 4)rem;
   }
   .ml0-m {
-    margin-left: 0;
+    margin-left: pow(2, -3)rem;
   }
   .ml1-m {
-    margin-left: 0.25rem;
+    margin-left: pow(2, -2)rem;
   }
   .ml2-m {
-    margin-left: 0.5rem;
+    margin-left: pow(2, -1)rem;
   }
   .ml3-m {
-    margin-left: 1rem;
+    margin-left: pow(2, 0)rem;
   }
   .ml4-m {
-    margin-left: 2rem;
+    margin-left: pow(2, 1)rem;
   }
   .ml5-m {
-    margin-left: 4rem;
+    margin-left: pow(2, 2)rem;
   }
   .ml6-m {
-    margin-left: 8rem;
+    margin-left: pow(2, 3)rem;
   }
   .ml7-m {
-    margin-left: 16rem;
-  }
-  .ml8-m {
-    margin-left: 32rem;
+    margin-left: pow(2, 4)rem;
   }
   .mr0-m {
-    margin-right: 0;
+    margin-right: pow(2, -3)rem;
   }
   .mr1-m {
-    margin-right: 0.25rem;
+    margin-right: pow(2, -2)rem;
   }
   .mr2-m {
-    margin-right: 0.5rem;
+    margin-right: pow(2, -1)rem;
   }
   .mr3-m {
-    margin-right: 1rem;
+    margin-right: pow(2, 0)rem;
   }
   .mr4-m {
-    margin-right: 2rem;
+    margin-right: pow(2, 1)rem;
   }
   .mr5-m {
-    margin-right: 4rem;
+    margin-right: pow(2, 2)rem;
   }
   .mr6-m {
-    margin-right: 8rem;
+    margin-right: pow(2, 3)rem;
   }
   .mr7-m {
-    margin-right: 16rem;
-  }
-  .mr8-m {
-    margin-right: 32rem;
+    margin-right: pow(2, 4)rem;
   }
   .mb0-m {
-    margin-bottom: 0;
+    margin-bottom: pow(2, -3)rem;
   }
   .mb1-m {
-    margin-bottom: 0.25rem;
+    margin-bottom: pow(2, -2)rem;
   }
   .mb2-m {
-    margin-bottom: 0.5rem;
+    margin-bottom: pow(2, -1)rem;
   }
   .mb3-m {
-    margin-bottom: 1rem;
+    margin-bottom: pow(2, 0)rem;
   }
   .mb4-m {
-    margin-bottom: 2rem;
+    margin-bottom: pow(2, 1)rem;
   }
   .mb5-m {
-    margin-bottom: 4rem;
+    margin-bottom: pow(2, 2)rem;
   }
   .mb6-m {
-    margin-bottom: 8rem;
+    margin-bottom: pow(2, 3)rem;
   }
   .mb7-m {
-    margin-bottom: 16rem;
-  }
-  .mb8-m {
-    margin-bottom: 32rem;
+    margin-bottom: pow(2, 4)rem;
   }
   .mt0-m {
-    margin-top: 0;
+    margin-top: pow(2, -3)rem;
   }
   .mt1-m {
-    margin-top: 0.25rem;
+    margin-top: pow(2, -2)rem;
   }
   .mt2-m {
-    margin-top: 0.5rem;
+    margin-top: pow(2, -1)rem;
   }
   .mt3-m {
-    margin-top: 1rem;
+    margin-top: pow(2, 0)rem;
   }
   .mt4-m {
-    margin-top: 2rem;
+    margin-top: pow(2, 1)rem;
   }
   .mt5-m {
-    margin-top: 4rem;
+    margin-top: pow(2, 2)rem;
   }
   .mt6-m {
-    margin-top: 8rem;
+    margin-top: pow(2, 3)rem;
   }
   .mt7-m {
-    margin-top: 16rem;
-  }
-  .mt8-m {
-    margin-top: 32rem;
+    margin-top: pow(2, 4)rem;
   }
   .ma0-m {
-    margin: 0;
+    margin: pow(2, -3)rem;
   }
   .ma1-m {
-    margin: 0.25rem;
+    margin: pow(2, -2)rem;
   }
   .ma2-m {
-    margin: 0.5rem;
+    margin: pow(2, -1)rem;
   }
   .ma3-m {
-    margin: 1rem;
+    margin: pow(2, 0)rem;
   }
   .ma4-m {
-    margin: 2rem;
+    margin: pow(2, 1)rem;
   }
   .ma5-m {
-    margin: 4rem;
+    margin: pow(2, 2)rem;
   }
   .ma6-m {
-    margin: 8rem;
+    margin: pow(2, 3)rem;
   }
   .ma7-m {
-    margin: 16rem;
-  }
-  .ma8-m {
-    margin: 32rem;
+    margin: pow(2, 4)rem;
   }
   .mv0-m {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: pow(2, -3)rem;
+    margin-bottom: pow(2, -3)rem;
   }
   .mv1-m {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
+    margin-top: pow(2, -2)rem;
+    margin-bottom: pow(2, -2)rem;
   }
   .mv2-m {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: pow(2, -1)rem;
+    margin-bottom: pow(2, -1)rem;
   }
   .mv3-m {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: pow(2, 0)rem;
+    margin-bottom: pow(2, 0)rem;
   }
   .mv4-m {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: pow(2, 1)rem;
+    margin-bottom: pow(2, 1)rem;
   }
   .mv5-m {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: pow(2, 2)rem;
+    margin-bottom: pow(2, 2)rem;
   }
   .mv6-m {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-top: pow(2, 3)rem;
+    margin-bottom: pow(2, 3)rem;
   }
   .mv7-m {
-    margin-top: 16rem;
-    margin-bottom: 16rem;
-  }
-  .mv8-m {
-    margin-top: 32rem;
-    margin-bottom: 32rem;
+    margin-top: pow(2, 4)rem;
+    margin-bottom: pow(2, 4)rem;
   }
   .mh0-m {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: pow(2, -3)rem;
+    margin-right: pow(2, -3)rem;
   }
   .mh1-m {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
+    margin-left: pow(2, -2)rem;
+    margin-right: pow(2, -2)rem;
   }
   .mh2-m {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: pow(2, -1)rem;
+    margin-right: pow(2, -1)rem;
   }
   .mh3-m {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: pow(2, 0)rem;
+    margin-right: pow(2, 0)rem;
   }
   .mh4-m {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: pow(2, 1)rem;
+    margin-right: pow(2, 1)rem;
   }
   .mh5-m {
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: pow(2, 2)rem;
+    margin-right: pow(2, 2)rem;
   }
   .mh6-m {
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-left: pow(2, 3)rem;
+    margin-right: pow(2, 3)rem;
   }
   .mh7-m {
-    margin-left: 16rem;
-    margin-right: 16rem;
-  }
-  .mh8-m {
-    margin-left: 32rem;
-    margin-right: 32rem;
+    margin-left: pow(2, 4)rem;
+    margin-right: pow(2, 4)rem;
   }
   .ga0-m {
-    row-gap: 0;
-    column-gap: 0;
+    row-gap: pow(2, -3)rem;
+    column-gap: pow(2, -3)rem;
   }
   .gv0-m {
-    row-gap: 0;
+    row-gap: pow(2, -3)rem;
   }
   .gh0-m {
-    column-gap: 0;
+    column-gap: pow(2, -3)rem;
   }
   .ga1-m {
-    row-gap: 0.25rem;
-    column-gap: 0.25rem;
+    row-gap: pow(2, -2)rem;
+    column-gap: pow(2, -2)rem;
   }
   .gv1-m {
-    row-gap: 0.25rem;
+    row-gap: pow(2, -2)rem;
   }
   .gh1-m {
-    column-gap: 0.25rem;
+    column-gap: pow(2, -2)rem;
   }
   .ga2-m {
-    row-gap: 0.5rem;
-    column-gap: 0.5rem;
+    row-gap: pow(2, -1)rem;
+    column-gap: pow(2, -1)rem;
   }
   .gv2-m {
-    row-gap: 0.5rem;
+    row-gap: pow(2, -1)rem;
   }
   .gh2-m {
-    column-gap: 0.5rem;
+    column-gap: pow(2, -1)rem;
   }
   .ga3-m {
-    row-gap: 1rem;
-    column-gap: 1rem;
+    row-gap: pow(2, 0)rem;
+    column-gap: pow(2, 0)rem;
   }
   .gv3-m {
-    row-gap: 1rem;
+    row-gap: pow(2, 0)rem;
   }
   .gh3-m {
-    column-gap: 1rem;
+    column-gap: pow(2, 0)rem;
   }
   .ga4-m {
-    row-gap: 2rem;
-    column-gap: 2rem;
+    row-gap: pow(2, 1)rem;
+    column-gap: pow(2, 1)rem;
   }
   .gv4-m {
-    row-gap: 2rem;
+    row-gap: pow(2, 1)rem;
   }
   .gh4-m {
-    column-gap: 2rem;
+    column-gap: pow(2, 1)rem;
   }
   .ga5-m {
-    row-gap: 4rem;
-    column-gap: 4rem;
+    row-gap: pow(2, 2)rem;
+    column-gap: pow(2, 2)rem;
   }
   .gv5-m {
-    row-gap: 4rem;
+    row-gap: pow(2, 2)rem;
   }
   .gh5-m {
-    column-gap: 4rem;
+    column-gap: pow(2, 2)rem;
   }
   .ga6-m {
-    row-gap: 8rem;
-    column-gap: 8rem;
+    row-gap: pow(2, 3)rem;
+    column-gap: pow(2, 3)rem;
   }
   .gv6-m {
-    row-gap: 8rem;
+    row-gap: pow(2, 3)rem;
   }
   .gh6-m {
-    column-gap: 8rem;
+    column-gap: pow(2, 3)rem;
   }
   .ga7-m {
-    row-gap: 16rem;
-    column-gap: 16rem;
+    row-gap: pow(2, 4)rem;
+    column-gap: pow(2, 4)rem;
   }
   .gv7-m {
-    row-gap: 16rem;
+    row-gap: pow(2, 4)rem;
   }
   .gh7-m {
-    column-gap: 16rem;
-  }
-  .ga8-m {
-    row-gap: 32rem;
-    column-gap: 32rem;
-  }
-  .gv8-m {
-    row-gap: 32rem;
-  }
-  .gh8-m {
-    column-gap: 32rem;
+    column-gap: pow(2, 4)rem;
   }
 }
-@media (60em) {
+@media screen and (min-width: 60em) {
   .pl0-l {
-    padding-left: 0;
+    padding-left: pow(2, -3)rem;
   }
   .pl1-l {
-    padding-left: 0.25rem;
+    padding-left: pow(2, -2)rem;
   }
   .pl2-l {
-    padding-left: 0.5rem;
+    padding-left: pow(2, -1)rem;
   }
   .pl3-l {
-    padding-left: 1rem;
+    padding-left: pow(2, 0)rem;
   }
   .pl4-l {
-    padding-left: 2rem;
+    padding-left: pow(2, 1)rem;
   }
   .pl5-l {
-    padding-left: 4rem;
+    padding-left: pow(2, 2)rem;
   }
   .pl6-l {
-    padding-left: 8rem;
+    padding-left: pow(2, 3)rem;
   }
   .pl7-l {
-    padding-left: 16rem;
-  }
-  .pl8-l {
-    padding-left: 32rem;
+    padding-left: pow(2, 4)rem;
   }
   .pr0-l {
-    padding-right: 0;
+    padding-right: pow(2, -3)rem;
   }
   .pr1-l {
-    padding-right: 0.25rem;
+    padding-right: pow(2, -2)rem;
   }
   .pr2-l {
-    padding-right: 0.5rem;
+    padding-right: pow(2, -1)rem;
   }
   .pr3-l {
-    padding-right: 1rem;
+    padding-right: pow(2, 0)rem;
   }
   .pr4-l {
-    padding-right: 2rem;
+    padding-right: pow(2, 1)rem;
   }
   .pr5-l {
-    padding-right: 4rem;
+    padding-right: pow(2, 2)rem;
   }
   .pr6-l {
-    padding-right: 8rem;
+    padding-right: pow(2, 3)rem;
   }
   .pr7-l {
-    padding-right: 16rem;
-  }
-  .pr8-l {
-    padding-right: 32rem;
+    padding-right: pow(2, 4)rem;
   }
   .pb0-l {
-    padding-bottom: 0;
+    padding-bottom: pow(2, -3)rem;
   }
   .pb1-l {
-    padding-bottom: 0.25rem;
+    padding-bottom: pow(2, -2)rem;
   }
   .pb2-l {
-    padding-bottom: 0.5rem;
+    padding-bottom: pow(2, -1)rem;
   }
   .pb3-l {
-    padding-bottom: 1rem;
+    padding-bottom: pow(2, 0)rem;
   }
   .pb4-l {
-    padding-bottom: 2rem;
+    padding-bottom: pow(2, 1)rem;
   }
   .pb5-l {
-    padding-bottom: 4rem;
+    padding-bottom: pow(2, 2)rem;
   }
   .pb6-l {
-    padding-bottom: 8rem;
+    padding-bottom: pow(2, 3)rem;
   }
   .pb7-l {
-    padding-bottom: 16rem;
-  }
-  .pb8-l {
-    padding-bottom: 32rem;
+    padding-bottom: pow(2, 4)rem;
   }
   .pt0-l {
-    padding-top: 0;
+    padding-top: pow(2, -3)rem;
   }
   .pt1-l {
-    padding-top: 0.25rem;
+    padding-top: pow(2, -2)rem;
   }
   .pt2-l {
-    padding-top: 0.5rem;
+    padding-top: pow(2, -1)rem;
   }
   .pt3-l {
-    padding-top: 1rem;
+    padding-top: pow(2, 0)rem;
   }
   .pt4-l {
-    padding-top: 2rem;
+    padding-top: pow(2, 1)rem;
   }
   .pt5-l {
-    padding-top: 4rem;
+    padding-top: pow(2, 2)rem;
   }
   .pt6-l {
-    padding-top: 8rem;
+    padding-top: pow(2, 3)rem;
   }
   .pt7-l {
-    padding-top: 16rem;
-  }
-  .pt8-l {
-    padding-top: 32rem;
+    padding-top: pow(2, 4)rem;
   }
   .pa0-l {
-    padding: 0;
+    padding: pow(2, -3)rem;
   }
   .pa1-l {
-    padding: 0.25rem;
+    padding: pow(2, -2)rem;
   }
   .pa2-l {
-    padding: 0.5rem;
+    padding: pow(2, -1)rem;
   }
   .pa3-l {
-    padding: 1rem;
+    padding: pow(2, 0)rem;
   }
   .pa4-l {
-    padding: 2rem;
+    padding: pow(2, 1)rem;
   }
   .pa5-l {
-    padding: 4rem;
+    padding: pow(2, 2)rem;
   }
   .pa6-l {
-    padding: 8rem;
+    padding: pow(2, 3)rem;
   }
   .pa7-l {
-    padding: 16rem;
-  }
-  .pa8-l {
-    padding: 32rem;
+    padding: pow(2, 4)rem;
   }
   .pv0-l {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: pow(2, -3)rem;
+    padding-bottom: pow(2, -3)rem;
   }
   .pv1-l {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding-top: pow(2, -2)rem;
+    padding-bottom: pow(2, -2)rem;
   }
   .pv2-l {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: pow(2, -1)rem;
+    padding-bottom: pow(2, -1)rem;
   }
   .pv3-l {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: pow(2, 0)rem;
+    padding-bottom: pow(2, 0)rem;
   }
   .pv4-l {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: pow(2, 1)rem;
+    padding-bottom: pow(2, 1)rem;
   }
   .pv5-l {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: pow(2, 2)rem;
+    padding-bottom: pow(2, 2)rem;
   }
   .pv6-l {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: pow(2, 3)rem;
+    padding-bottom: pow(2, 3)rem;
   }
   .pv7-l {
-    padding-top: 16rem;
-    padding-bottom: 16rem;
-  }
-  .pv8-l {
-    padding-top: 32rem;
-    padding-bottom: 32rem;
+    padding-top: pow(2, 4)rem;
+    padding-bottom: pow(2, 4)rem;
   }
   .ph0-l {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: pow(2, -3)rem;
+    padding-right: pow(2, -3)rem;
   }
   .ph1-l {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+    padding-left: pow(2, -2)rem;
+    padding-right: pow(2, -2)rem;
   }
   .ph2-l {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: pow(2, -1)rem;
+    padding-right: pow(2, -1)rem;
   }
   .ph3-l {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: pow(2, 0)rem;
+    padding-right: pow(2, 0)rem;
   }
   .ph4-l {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: pow(2, 1)rem;
+    padding-right: pow(2, 1)rem;
   }
   .ph5-l {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: pow(2, 2)rem;
+    padding-right: pow(2, 2)rem;
   }
   .ph6-l {
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: pow(2, 3)rem;
+    padding-right: pow(2, 3)rem;
   }
   .ph7-l {
-    padding-left: 16rem;
-    padding-right: 16rem;
-  }
-  .ph8-l {
-    padding-left: 32rem;
-    padding-right: 32rem;
+    padding-left: pow(2, 4)rem;
+    padding-right: pow(2, 4)rem;
   }
   .ml0-l {
-    margin-left: 0;
+    margin-left: pow(2, -3)rem;
   }
   .ml1-l {
-    margin-left: 0.25rem;
+    margin-left: pow(2, -2)rem;
   }
   .ml2-l {
-    margin-left: 0.5rem;
+    margin-left: pow(2, -1)rem;
   }
   .ml3-l {
-    margin-left: 1rem;
+    margin-left: pow(2, 0)rem;
   }
   .ml4-l {
-    margin-left: 2rem;
+    margin-left: pow(2, 1)rem;
   }
   .ml5-l {
-    margin-left: 4rem;
+    margin-left: pow(2, 2)rem;
   }
   .ml6-l {
-    margin-left: 8rem;
+    margin-left: pow(2, 3)rem;
   }
   .ml7-l {
-    margin-left: 16rem;
-  }
-  .ml8-l {
-    margin-left: 32rem;
+    margin-left: pow(2, 4)rem;
   }
   .mr0-l {
-    margin-right: 0;
+    margin-right: pow(2, -3)rem;
   }
   .mr1-l {
-    margin-right: 0.25rem;
+    margin-right: pow(2, -2)rem;
   }
   .mr2-l {
-    margin-right: 0.5rem;
+    margin-right: pow(2, -1)rem;
   }
   .mr3-l {
-    margin-right: 1rem;
+    margin-right: pow(2, 0)rem;
   }
   .mr4-l {
-    margin-right: 2rem;
+    margin-right: pow(2, 1)rem;
   }
   .mr5-l {
-    margin-right: 4rem;
+    margin-right: pow(2, 2)rem;
   }
   .mr6-l {
-    margin-right: 8rem;
+    margin-right: pow(2, 3)rem;
   }
   .mr7-l {
-    margin-right: 16rem;
-  }
-  .mr8-l {
-    margin-right: 32rem;
+    margin-right: pow(2, 4)rem;
   }
   .mb0-l {
-    margin-bottom: 0;
+    margin-bottom: pow(2, -3)rem;
   }
   .mb1-l {
-    margin-bottom: 0.25rem;
+    margin-bottom: pow(2, -2)rem;
   }
   .mb2-l {
-    margin-bottom: 0.5rem;
+    margin-bottom: pow(2, -1)rem;
   }
   .mb3-l {
-    margin-bottom: 1rem;
+    margin-bottom: pow(2, 0)rem;
   }
   .mb4-l {
-    margin-bottom: 2rem;
+    margin-bottom: pow(2, 1)rem;
   }
   .mb5-l {
-    margin-bottom: 4rem;
+    margin-bottom: pow(2, 2)rem;
   }
   .mb6-l {
-    margin-bottom: 8rem;
+    margin-bottom: pow(2, 3)rem;
   }
   .mb7-l {
-    margin-bottom: 16rem;
-  }
-  .mb8-l {
-    margin-bottom: 32rem;
+    margin-bottom: pow(2, 4)rem;
   }
   .mt0-l {
-    margin-top: 0;
+    margin-top: pow(2, -3)rem;
   }
   .mt1-l {
-    margin-top: 0.25rem;
+    margin-top: pow(2, -2)rem;
   }
   .mt2-l {
-    margin-top: 0.5rem;
+    margin-top: pow(2, -1)rem;
   }
   .mt3-l {
-    margin-top: 1rem;
+    margin-top: pow(2, 0)rem;
   }
   .mt4-l {
-    margin-top: 2rem;
+    margin-top: pow(2, 1)rem;
   }
   .mt5-l {
-    margin-top: 4rem;
+    margin-top: pow(2, 2)rem;
   }
   .mt6-l {
-    margin-top: 8rem;
+    margin-top: pow(2, 3)rem;
   }
   .mt7-l {
-    margin-top: 16rem;
-  }
-  .mt8-l {
-    margin-top: 32rem;
+    margin-top: pow(2, 4)rem;
   }
   .ma0-l {
-    margin: 0;
+    margin: pow(2, -3)rem;
   }
   .ma1-l {
-    margin: 0.25rem;
+    margin: pow(2, -2)rem;
   }
   .ma2-l {
-    margin: 0.5rem;
+    margin: pow(2, -1)rem;
   }
   .ma3-l {
-    margin: 1rem;
+    margin: pow(2, 0)rem;
   }
   .ma4-l {
-    margin: 2rem;
+    margin: pow(2, 1)rem;
   }
   .ma5-l {
-    margin: 4rem;
+    margin: pow(2, 2)rem;
   }
   .ma6-l {
-    margin: 8rem;
+    margin: pow(2, 3)rem;
   }
   .ma7-l {
-    margin: 16rem;
-  }
-  .ma8-l {
-    margin: 32rem;
+    margin: pow(2, 4)rem;
   }
   .mv0-l {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: pow(2, -3)rem;
+    margin-bottom: pow(2, -3)rem;
   }
   .mv1-l {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
+    margin-top: pow(2, -2)rem;
+    margin-bottom: pow(2, -2)rem;
   }
   .mv2-l {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: pow(2, -1)rem;
+    margin-bottom: pow(2, -1)rem;
   }
   .mv3-l {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: pow(2, 0)rem;
+    margin-bottom: pow(2, 0)rem;
   }
   .mv4-l {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: pow(2, 1)rem;
+    margin-bottom: pow(2, 1)rem;
   }
   .mv5-l {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: pow(2, 2)rem;
+    margin-bottom: pow(2, 2)rem;
   }
   .mv6-l {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-top: pow(2, 3)rem;
+    margin-bottom: pow(2, 3)rem;
   }
   .mv7-l {
-    margin-top: 16rem;
-    margin-bottom: 16rem;
-  }
-  .mv8-l {
-    margin-top: 32rem;
-    margin-bottom: 32rem;
+    margin-top: pow(2, 4)rem;
+    margin-bottom: pow(2, 4)rem;
   }
   .mh0-l {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: pow(2, -3)rem;
+    margin-right: pow(2, -3)rem;
   }
   .mh1-l {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
+    margin-left: pow(2, -2)rem;
+    margin-right: pow(2, -2)rem;
   }
   .mh2-l {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: pow(2, -1)rem;
+    margin-right: pow(2, -1)rem;
   }
   .mh3-l {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: pow(2, 0)rem;
+    margin-right: pow(2, 0)rem;
   }
   .mh4-l {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: pow(2, 1)rem;
+    margin-right: pow(2, 1)rem;
   }
   .mh5-l {
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: pow(2, 2)rem;
+    margin-right: pow(2, 2)rem;
   }
   .mh6-l {
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-left: pow(2, 3)rem;
+    margin-right: pow(2, 3)rem;
   }
   .mh7-l {
-    margin-left: 16rem;
-    margin-right: 16rem;
-  }
-  .mh8-l {
-    margin-left: 32rem;
-    margin-right: 32rem;
+    margin-left: pow(2, 4)rem;
+    margin-right: pow(2, 4)rem;
   }
   .ga0-l {
-    row-gap: 0;
-    column-gap: 0;
+    row-gap: pow(2, -3)rem;
+    column-gap: pow(2, -3)rem;
   }
   .gv0-l {
-    row-gap: 0;
+    row-gap: pow(2, -3)rem;
   }
   .gh0-l {
-    column-gap: 0;
+    column-gap: pow(2, -3)rem;
   }
   .ga1-l {
-    row-gap: 0.25rem;
-    column-gap: 0.25rem;
+    row-gap: pow(2, -2)rem;
+    column-gap: pow(2, -2)rem;
   }
   .gv1-l {
-    row-gap: 0.25rem;
+    row-gap: pow(2, -2)rem;
   }
   .gh1-l {
-    column-gap: 0.25rem;
+    column-gap: pow(2, -2)rem;
   }
   .ga2-l {
-    row-gap: 0.5rem;
-    column-gap: 0.5rem;
+    row-gap: pow(2, -1)rem;
+    column-gap: pow(2, -1)rem;
   }
   .gv2-l {
-    row-gap: 0.5rem;
+    row-gap: pow(2, -1)rem;
   }
   .gh2-l {
-    column-gap: 0.5rem;
+    column-gap: pow(2, -1)rem;
   }
   .ga3-l {
-    row-gap: 1rem;
-    column-gap: 1rem;
+    row-gap: pow(2, 0)rem;
+    column-gap: pow(2, 0)rem;
   }
   .gv3-l {
-    row-gap: 1rem;
+    row-gap: pow(2, 0)rem;
   }
   .gh3-l {
-    column-gap: 1rem;
+    column-gap: pow(2, 0)rem;
   }
   .ga4-l {
-    row-gap: 2rem;
-    column-gap: 2rem;
+    row-gap: pow(2, 1)rem;
+    column-gap: pow(2, 1)rem;
   }
   .gv4-l {
-    row-gap: 2rem;
+    row-gap: pow(2, 1)rem;
   }
   .gh4-l {
-    column-gap: 2rem;
+    column-gap: pow(2, 1)rem;
   }
   .ga5-l {
-    row-gap: 4rem;
-    column-gap: 4rem;
+    row-gap: pow(2, 2)rem;
+    column-gap: pow(2, 2)rem;
   }
   .gv5-l {
-    row-gap: 4rem;
+    row-gap: pow(2, 2)rem;
   }
   .gh5-l {
-    column-gap: 4rem;
+    column-gap: pow(2, 2)rem;
   }
   .ga6-l {
-    row-gap: 8rem;
-    column-gap: 8rem;
+    row-gap: pow(2, 3)rem;
+    column-gap: pow(2, 3)rem;
   }
   .gv6-l {
-    row-gap: 8rem;
+    row-gap: pow(2, 3)rem;
   }
   .gh6-l {
-    column-gap: 8rem;
+    column-gap: pow(2, 3)rem;
   }
   .ga7-l {
-    row-gap: 16rem;
-    column-gap: 16rem;
+    row-gap: pow(2, 4)rem;
+    column-gap: pow(2, 4)rem;
   }
   .gv7-l {
-    row-gap: 16rem;
+    row-gap: pow(2, 4)rem;
   }
   .gh7-l {
-    column-gap: 16rem;
-  }
-  .ga8-l {
-    row-gap: 32rem;
-    column-gap: 32rem;
-  }
-  .gv8-l {
-    row-gap: 32rem;
-  }
-  .gh8-l {
-    column-gap: 32rem;
+    column-gap: pow(2, 4)rem;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /* Variables */
 :root {
   --spacing-1: .25rem;
@@ -8695,7 +9625,7 @@ code, .code {
   margin-top: calc(-1 * var(--spacing-7));
 }
 
-@media (--breakpoint-2) {
+@media screen and (min-width: 30em) {
   .na1-s {
     margin: calc(-1 * var(--spacing-1));
   }
@@ -8802,7 +9732,7 @@ code, .code {
     margin-top: calc(-1 * var(--spacing-7));
   }
 }
-@media (--breakpoint-3) {
+@media screen and (min-width: 48em) {
   .na1-m {
     margin: calc(-1 * var(--spacing-1));
   }
@@ -8909,7 +9839,7 @@ code, .code {
     margin-top: calc(-1 * var(--spacing-7));
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .na1-l {
     margin: calc(-1 * var(--spacing-1));
   }
@@ -9016,6 +9946,31 @@ code, .code {
     margin-top: calc(-1 * var(--spacing-7));
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /* Variables */
 /*
 
@@ -9036,6 +9991,31 @@ code, .code {
   background-color: var(--black-10);
 }
 
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    TEXT DECORATION
@@ -9060,6 +10040,31 @@ code, .code {
   text-decoration: none;
 }
 
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
   TEXT ALIGN
@@ -9096,7 +10101,7 @@ code, .code {
   text-align: justify;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .tl-s {
     text-align: left;
   }
@@ -9110,7 +10115,7 @@ code, .code {
     text-align: justify;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .tl-m {
     text-align: left;
   }
@@ -9124,7 +10129,7 @@ code, .code {
     text-align: justify;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .tl-l {
     text-align: left;
   }
@@ -9138,6 +10143,31 @@ code, .code {
     text-align: justify;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    TEXT TRANSFORM
@@ -9174,7 +10204,7 @@ code, .code {
   text-transform: none;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .ttc-s {
     text-transform: capitalize;
   }
@@ -9188,7 +10218,7 @@ code, .code {
     text-transform: none;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .ttc-m {
     text-transform: capitalize;
   }
@@ -9202,7 +10232,7 @@ code, .code {
     text-transform: none;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .ttc-l {
     text-transform: capitalize;
   }
@@ -9216,6 +10246,31 @@ code, .code {
     text-transform: none;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    TYPE SCALE
@@ -9287,7 +10342,7 @@ code, .code {
   font-size: 12rem;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .f1-s {
     font-size: 0.75rem;
   }
@@ -9325,7 +10380,7 @@ code, .code {
     font-size: 12rem;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .f1-m {
     font-size: 0.75rem;
   }
@@ -9363,7 +10418,7 @@ code, .code {
     font-size: 12rem;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .f1-l {
     font-size: 0.75rem;
   }
@@ -9401,6 +10456,31 @@ code, .code {
     font-size: 12rem;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    TYPOGRAPHY
@@ -9445,7 +10525,7 @@ code, .code {
   text-overflow: ellipsis;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .measure-s {
     max-width: 66ch;
   }
@@ -9469,7 +10549,7 @@ code, .code {
     text-overflow: ellipsis;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .measure-m {
     max-width: 66ch;
   }
@@ -9493,7 +10573,7 @@ code, .code {
     text-overflow: ellipsis;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .measure-l {
     max-width: 66ch;
   }
@@ -9517,6 +10597,31 @@ code, .code {
     text-overflow: ellipsis;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    UTILITIES
@@ -9545,7 +10650,7 @@ code, .code {
   margin-left: auto;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .center-s {
     margin-right: auto;
     margin-left: auto;
@@ -9557,7 +10662,7 @@ code, .code {
     margin-left: auto;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .center-m {
     margin-right: auto;
     margin-left: auto;
@@ -9569,7 +10674,7 @@ code, .code {
     margin-left: auto;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .center-l {
     margin-right: auto;
     margin-left: auto;
@@ -9581,6 +10686,31 @@ code, .code {
     margin-left: auto;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    VISIBILITY
@@ -9610,7 +10740,7 @@ code, .code {
   visibility: hidden;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .clip-s {
     position: fixed !important;
     _position: absolute !important;
@@ -9624,7 +10754,7 @@ code, .code {
     visibility: hidden;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .clip-m {
     position: fixed !important;
     _position: absolute !important;
@@ -9638,7 +10768,7 @@ code, .code {
     visibility: hidden;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .clip-l {
     position: fixed !important;
     _position: absolute !important;
@@ -9652,6 +10782,31 @@ code, .code {
     visibility: hidden;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    WHITE SPACE
@@ -9678,7 +10833,7 @@ code, .code {
   white-space: pre-wrap;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .ws-normal-s {
     white-space: normal;
   }
@@ -9692,7 +10847,7 @@ code, .code {
     white-space: pre-wrap;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .ws-normal-m {
     white-space: normal;
   }
@@ -9706,7 +10861,7 @@ code, .code {
     white-space: pre-wrap;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .ws-normal-l {
     white-space: normal;
   }
@@ -9720,6 +10875,31 @@ code, .code {
     white-space: pre-wrap;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    VERTICAL ALIGN
@@ -9746,7 +10926,7 @@ code, .code {
   vertical-align: bottom;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .v-base-s {
     vertical-align: baseline;
   }
@@ -9760,7 +10940,7 @@ code, .code {
     vertical-align: bottom;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .v-base-m {
     vertical-align: baseline;
   }
@@ -9774,7 +10954,7 @@ code, .code {
     vertical-align: bottom;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .v-base-l {
     vertical-align: baseline;
   }
@@ -9788,6 +10968,31 @@ code, .code {
     vertical-align: bottom;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
   WORD BREAK
@@ -9813,7 +11018,7 @@ code, .code {
   word-break: keep-all;
 }
 
-@media (--breakpoint-small) {
+@media screen and (min-width: 30em) {
   .word-normal-s {
     word-break: normal;
   }
@@ -9824,7 +11029,7 @@ code, .code {
     word-break: keep-all;
   }
 }
-@media (--breakpoint-medium) {
+@media screen and (min-width: 48em) {
   .word-normal-m {
     word-break: normal;
   }
@@ -9835,7 +11040,7 @@ code, .code {
     word-break: keep-all;
   }
 }
-@media (--breakpoint-large) {
+@media screen and (min-width: 60em) {
   .word-normal-l {
     word-break: normal;
   }
@@ -9846,6 +11051,31 @@ code, .code {
     word-break: keep-all;
   }
 }
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
   HOVER EFFECTS
@@ -10033,6 +11263,31 @@ code, .code {
 }
 
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
   Z-INDEX
 
@@ -10115,6 +11370,31 @@ code, .code {
 }
 
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
     NESTED
     Tachyons module for styling nested elements
@@ -10171,6 +11451,31 @@ code, .code {
 }
 
 /*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
+/*
 
   STYLES
 
@@ -10178,6 +11483,31 @@ code, .code {
 
 */
 /* Debugging */
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
   DEBUG CHILDREN
@@ -10199,6 +11529,31 @@ code, .code {
   outline: 1px solid black;
 }
 
+/*
+   SPACING
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Scale:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+*/
+/*
+   Modifiers:
+     a = all
+     v = vertical
+     h = horizontal
+     t = top
+     r = right
+     b = bottom
+     l = left
+*/
 /*
 
    DEBUG GRID

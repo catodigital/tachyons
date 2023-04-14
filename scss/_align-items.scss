@@ -1,3 +1,4 @@
+@use "vars";
 /*
 
   ALIGN-ITEMS
@@ -15,7 +16,7 @@
 .items-baseline { align-items: baseline; }
 .items-stretch  { align-items: stretch; }
 
-@media (--breakpoint-small) {
+@media #{$media-breakpoint-small} {
   .items-start-s    { align-items: flex-start; }
   .items-end-s   { align-items: flex-end; }
   .items-center-s   { align-items: center; }
@@ -23,7 +24,7 @@
   .items-stretch-s  { align-items: stretch; }
 }
 
-@media (--breakpoint-medium) {
+@media #{$media-breakpoint-medium} {
   .items-start-m    { align-items: flex-start; }
   .items-end-m   { align-items: flex-end; }
   .items-center-m   { align-items: center; }
@@ -31,7 +32,7 @@
   .items-stretch-m  { align-items: stretch; }
 }
 
-@media (--breakpoint-large) {
+@media #{$media-breakpoint-large} {
   .items-start-l    { align-items: flex-start; }
   .items-end-l   { align-items: flex-end; }
   .items-center-l   { align-items: center; }

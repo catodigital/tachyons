@@ -1,3 +1,4 @@
+@use "vars";
 /*
 
    VISIBILITY
@@ -24,7 +25,7 @@
 .visible { visibility: visible; }
 .hidden { visibility: hidden; }
 
-@media (--breakpoint-small) {
+@media #{$media-breakpoint-small} {
   .clip-s {
     position: fixed !important;
     _position: absolute !important;
@@ -35,7 +36,7 @@
   .hidden-s { visibility: hidden; }
 }
 
-@media (--breakpoint-medium) {
+@media #{$media-breakpoint-medium} {
   .clip-m {
     position: fixed !important;
     _position: absolute !important;
@@ -46,7 +47,7 @@
   .hidden-m { visibility: hidden; }
 }
 
-@media (--breakpoint-large) {
+@media #{$media-breakpoint-large} {
   .clip-l {
     position: fixed !important;
     _position: absolute !important;

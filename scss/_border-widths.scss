@@ -1,3 +1,4 @@
+@use "vars";
 /*
 
    BORDER WIDTHS
@@ -32,7 +33,7 @@
 .bb-0 { border-bottom-width: 0; }
 .bl-0 { border-left-width: 0; }
 
-@media (--breakpoint-small) {
+@media #{$media-breakpoint-small} {
   .bw0-s { border-width: 0; }
   .bw1-s { border-width: 1px; }
   .bw2-s { border-width: 2px; }
@@ -44,7 +45,7 @@
   .bl-0-s { border-left-width: 0; }
 }
 
-@media (--breakpoint-medium) {
+@media #{$media-breakpoint-medium} {
   .bw0-m { border-width: 0; }
   .bw1-m { border-width: 1px; }
   .bw2-m { border-width: 2px; }
@@ -56,7 +57,7 @@
   .bl-0-m { border-left-width: 0; }
 }
 
-@media (--breakpoint-large) {
+@media #{$media-breakpoint-large} {
   .bw0-l { border-width: 0; }
   .bw1-l { border-width: 1px; }
   .bw2-l { border-width: 2px; }

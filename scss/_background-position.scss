@@ -1,3 +1,4 @@
+@use "vars";
 /*
 
     BACKGROUND POSITION
@@ -44,7 +45,7 @@
   background-position: center left;
 }
 
-@media (--breakpoint-small) {
+@media #{$media-breakpoint-small} {
   .bg-center-s {
     background-repeat: no-repeat;
     background-position: center center;
@@ -71,7 +72,7 @@
   }
 }
 
-@media (--breakpoint-medium) {
+@media #{$media-breakpoint-medium} {
   .bg-center-m {
     background-repeat: no-repeat;
     background-position: center center;
@@ -98,7 +99,7 @@
   }
 }
 
-@media (--breakpoint-large) {
+@media #{$media-breakpoint-large} {
   .bg-center-l {
     background-repeat: no-repeat;
     background-position: center center;

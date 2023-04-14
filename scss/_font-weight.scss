@@ -1,3 +1,4 @@
+@use "vars";
 /*
 
    FONT WEIGHT
@@ -37,7 +38,7 @@
 .fw9    { font-weight: 900; }
 
 
-@media (--breakpoint-small) {
+@media #{$media-breakpoint-small} {
   .normal-s { font-weight: normal; }
   .b-s      { font-weight: bold; }
   .fw1-s    { font-weight: 100; }
@@ -51,7 +52,7 @@
   .fw9-s    { font-weight: 900; }
 }
 
-@media (--breakpoint-medium) {
+@media #{$media-breakpoint-medium} {
   .normal-m { font-weight: normal; }
   .b-m      { font-weight: bold; }
   .fw1-m    { font-weight: 100; }
@@ -65,7 +66,7 @@
   .fw9-m    { font-weight: 900; }
 }
 
-@media (--breakpoint-large) {
+@media #{$media-breakpoint-large} {
   .normal-l { font-weight: normal; }
   .b-l      { font-weight: bold; }
   .fw1-l    { font-weight: 100; }

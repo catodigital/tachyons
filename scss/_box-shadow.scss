@@ -1,3 +1,4 @@
+@use "vars";
 /*
 
   BOX-SHADOW
@@ -28,7 +29,7 @@
 .shadow-8 {  box-shadow: 0 2px 1px rgba(0,0,0,0.09), 0 4px 2px rgba(0,0,0,0.09), 0 8px 4px rgba(0,0,0,0.09), 0 16px 8px rgba(0,0,0,0.09), 0 32px 16px rgba(0,0,0,0.09); }
 
 
-@media (--breakpoint-small) {
+@media #{$media-breakpoint-small} {
   .shadow-border-s {  box-shadow: inset 0 0 1px 0 rgba(0,0,0,0.125); }
   .shadow-border-light-s  { box-shadow: inset 0 0 1px 0 rgba(255,255,255,0.125); }
   .shadow-border-solid-s  { box-shadow: inset 0 0 1px 0 currentColor; }
@@ -46,7 +47,7 @@
   .shadow-8-s {  box-shadow: 0 2px 1px rgba(0,0,0,0.09), 0 4px 2px rgba(0,0,0,0.09), 0 8px 4px rgba(0,0,0,0.09), 0 16px 8px rgba(0,0,0,0.09), 0 32px 16px rgba(0,0,0,0.09); }
 }
 
-@media (--breakpoint-medium) {
+@media #{$media-breakpoint-medium} {
   .shadow-border-m {  box-shadow: inset 0 0 1px 0 rgba(0,0,0,0.125); }
   .shadow-border-light-m  { box-shadow: inset 0 0 1px 0 rgba(255,255,255,0.125); }
   .shadow-border-solid-m  { box-shadow: inset 0 0 1px 0 currentColor; }
@@ -64,7 +65,7 @@
   .shadow-8-m {  box-shadow: 0 2px 1px rgba(0,0,0,0.09), 0 4px 2px rgba(0,0,0,0.09), 0 8px 4px rgba(0,0,0,0.09), 0 16px 8px rgba(0,0,0,0.09), 0 32px 16px rgba(0,0,0,0.09); }
 }
 
-@media (--breakpoint-large) {
+@media #{$media-breakpoint-large} {
   .shadow-border-l {  box-shadow: inset 0 0 1px 0 rgba(0,0,0,0.125); }
   .shadow-border-light-l  { box-shadow: inset 0 0 1px 0 rgba(255,255,255,0.125); }
   .shadow-border-solid-l  { box-shadow: inset 0 0 1px 0 currentColor; }

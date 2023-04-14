@@ -1,3 +1,4 @@
+@use "vars";
 /*
 
    ASPECT RATIOS
@@ -25,7 +26,7 @@
 .aspect-ratio-1x1 {  aspect-ratio: 1 / 1; }
 
 
-@media (--breakpoint-small){
+@media #{$media-breakpoint-small}{
   .aspect-ratio-16x9-s { aspect-ratio: 16 / 9; }
   .aspect-ratio-9x16-s { aspect-ratio: 9 / 16; }
 
@@ -45,7 +46,7 @@
   .aspect-ratio-1x1-s { aspect-ratio: 1 / 1; }
 }
 
-@media (--breakpoint-medium){
+@media #{$media-breakpoint-medium}{
   .aspect-ratio-16x9-m { aspect-ratio: 16 / 9; }
   .aspect-ratio-9x16-m { aspect-ratio: 9 / 16; }
 
@@ -65,7 +66,7 @@
   .aspect-ratio-1x1-m { aspect-ratio: 1 / 1; }
 }
 
-@media (--breakpoint-large){
+@media #{$media-breakpoint-large}{
   .aspect-ratio-16x9-l { aspect-ratio: 16 / 9; }
   .aspect-ratio-9x16-l { aspect-ratio: 9 / 16; }
 
