@@ -26,25 +26,22 @@
 */
 
 
+.cf:before,
+.cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.cf { zoom: 1; }
 
-.fl { float: left; }
-.fr { float: right; }
-.fn { float: none; }
+.cl { clear: left; }
+.cr { clear: right; }
+.cb { clear: both; }
+.cn { clear: none; }
 
-@media #{$media-breakpoint-small} {
-  .fl-s { float: left; }
-  .fr-s { float: right;  }
-  .fn-s { float: none; }
+@mixin floats($ext) {
+  .fl { float: left; }
+  .fr { float: right; }
+  .fn { float: none; }
 }
 
-@media #{$media-breakpoint-medium} {
-  .fl-m { float: left;  }
-  .fr-m { float: right;  }
-  .fn-m { float: none; }
-}
-
-@media #{$media-breakpoint-large} {
-  .fl-l { float: left; }
-  .fr-l { float: right; }
-  .fn-l { float: none; }
+@include map-sizes using ($ext) {
+  @include floats($ext);
 }

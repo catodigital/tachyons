@@ -1,0 +1,29 @@
+@use "vars";
+/*
+
+  JUSTIFY-CONTENT
+
+  Media Query Extensions:
+   -s = small
+   -m = medium
+   -l = large
+
+  MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+
+*/
+
+@mixin justify($ext) {
+.justify-start#{$ext}   { justify-content: flex-start; }
+.justify-end#{$ext}     { justify-content: flex-end; }
+.justify-center#{$ext}  { justify-content: center; }
+.justify-between#{$ext} { justify-content: space-between; }
+.justify-around#{$ext}  { justify-content: space-around; }
+.justify-self-start#{$ext} { justify-self: start; }
+.justify-self-end#{$ext} { justify-self: end; }
+.justify-self-center#{$ext} { justify-self: center; }
+.justify-self-stretch#{$ext}{ justify-self: stretch; }
+}
+
+@include map-sizes using ($ext) {
+  @include justify($ext);
+}

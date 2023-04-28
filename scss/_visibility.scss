@@ -16,45 +16,17 @@
     Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 */
 
-.clip {
+@mixin visibility($ext) {
+.clip#{$ext} {
   position: fixed !important;
   _position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
-.visible { visibility: visible; }
-.hidden { visibility: hidden; }
-
-@media #{$media-breakpoint-small} {
-  .clip-s {
-    position: fixed !important;
-    _position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-  }
-  .visible-s { visibility: visible; }
-  .hidden-s { visibility: hidden; }
+.visible#{$ext} { visibility: visible; }
+.hidden#{$ext} { visibility: hidden; }
 }
 
-@media #{$media-breakpoint-medium} {
-  .clip-m {
-    position: fixed !important;
-    _position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-  }
-  .visible-m { visibility: visible; }
-  .hidden-m { visibility: hidden; }
+@include map-sizes using ($ext) {
+  @include visibility($ext);
 }
-
-@media #{$media-breakpoint-large} {
-  .clip-l {
-    position: fixed !important;
-    _position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-  }
-  .visible-l { visibility: visible; }
-  .hidden-l { visibility: hidden; }
-}
-

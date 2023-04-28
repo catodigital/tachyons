@@ -10,24 +10,12 @@
 
 */
 
-.outline { outline: 1px solid; }
-.outline-transparent { outline: 1px solid transparent; }
-.outline-0 { outline: 0; }
-
-@media #{$media-breakpoint-small} {
-  .outline-s { outline: 1px solid; }
-  .outline-transparent-s { outline: 1px solid transparent; }
-  .outline-0-s { outline: 0; }
+@mixin outlines($ext) {
+.outline#{$ext} { outline: 1px solid; }
+.outline-transparent#{$ext} { outline: 1px solid transparent; }
+.outline-0#{$ext} { outline: 0; }
 }
 
-@media #{$media-breakpoint-medium} {
-  .outline-m { outline: 1px solid; }
-  .outline-transparent-m { outline: 1px solid transparent; }
-  .outline-0-m { outline: 0; }
-}
-
-@media #{$media-breakpoint-large} {
-  .outline-l { outline: 1px solid; }
-  .outline-transparent-l { outline: 1px solid transparent; }
-  .outline-0-l { outline: 0; }
+@include map-sizes using ($ext) {
+  @include outlines($ext);
 }

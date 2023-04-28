@@ -23,74 +23,20 @@
 
 */
 
-.dn {                display: none; }
-.di {                display: inline; }
-.db {                display: block; }
-.dib {               display: inline-block; }
-.df, .flex {         display: flex; }
-.dif, .inline-flex { display: inline-flex; }
-.dg,
-.grid {
-  display: grid;
-}
-
-.dig,
-.inline-grid {
-  display: inline-grid;
-}
-
-@media #{$media-breakpoint-small} {
-  .dn-s {                display: none; }
-  .di-s {                display: inline; }
-  .db-s {                display: block; }
-  .dib-s {               display: inline-block; }
-  .df-s, .flex-s {         display: flex; }
-  .dif-s, .inline-flex-s { display: inline-flex; }
-  .dg-s,
-  .grid-s {
-    display: grid;
+// NOTE: removed `df, dg, dig, and dif` inlieu of their explicit names — no reason to have duplicates
+@mixin displays($ext) {
+  .dn#{$ext} { display: none; }
+  .di#{$ext} { display: inline; }
+  .db#{$ext} { display: block; }
+  .dib#{$ext} { display: inline-block; }
+  .flex#{$ext} { display: flex; }
+  .inline-flex#{$ext} { display: inline-flex; }
+  .grid#{$ext} { display: grid;
   }
-
-  .dig-s,
-  .inline-grid-s {
-    display: inline-grid;
+  .inline-grid#{$ext} { display: inline-grid;
   }
 }
 
-@media #{$media-breakpoint-medium} {
-
-  .dn-m {                display: none; }
-  .di-m {                display: inline; }
-  .db-m {                display: block; }
-  .dib-m {               display: inline-block; }
-  .df-m, .flex-m {         display: flex; }
-  .dif-m, .inline-flex-m { display: inline-flex; }
-  .dg-m,
-  .grid-m {
-    display: grid;
-  }
-
-  .dig-m,
-  .inline-grid-m {
-    display: inline-grid;
-  }
+@include map-sizes using ($ext) {
+  @include displays($ext);
 }
-
-@media #{$media-breakpoint-large} {
-  .dn-l {                display: none; }
-  .di-l {                display: inline; }
-  .db-l {                display: block; }
-  .dib-l {               display: inline-block; }
-  .df-l, .flex-l {         display: flex; }
-  .dif-l, .inline-flex-l { display: inline-flex; }
-  .dg-l,
-  .grid-l {
-    display: grid;
-  }
-
-  .dig-l,
-  .inline-grid-l {
-    display: inline-grid;
-  }
-}
-

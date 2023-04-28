@@ -5,34 +5,33 @@
 @use "sass:list";
 @use "sass:math";
 
-@function get-size($x) {
-  @if $x > 0 {
-    @return #{math.pow(2, $x - 3)}rem;
-  } @else {
-    @return 0;
-  }
+@mixin directions($prefix, $side, $size) {
+    @if $side == "horiz" {
+      #{$prefix}-left: $size;
+      #{$prefix}-right: $size;
+    } @else if $side == "vert" {
+      #{$prefix}-top: $size;
+      #{$prefix}-bottom: $size;
+    } @else {
+      #{$prefix}#{$side}: $size;
+    }
 }
 
 @mixin expand-sizes($ext) {
   @each $type, $prefix in ("p": "padding", "m": "margin") {
     @each $letter, $side in map-merge($sides, $spans) {
-      @for $x from 0 through 7 {
+      @for $x from 0 through calc(list.length($sizes) - 1) {
         $size: get-size($x);
         .#{$type}#{$letter}#{$x}#{$ext} {
-          @if $side == "horiz" {
-            #{$prefix}-left: $size;
-            #{$prefix}-right: $size;
-          } @else if $side == "vert" {
-            #{$prefix}-top: $size;
-            #{$prefix}-bottom: $size;
-          } @else {
-            #{$prefix}#{$side}: $size;
-          }
+          @include directions($prefix, $side, $size);
         }
+      }
+      .#{$type}#{$letter}-auto#{$ext} {
+        @include directions($prefix, $side, auto);
       }
     }
   }
-  @for $x from 0 through 7 {
+  @for $x from 0 through calc(list.length($sizes) - 1) {
     $size: get-size($x);
     .ga#{$x}#{$ext} {
       row-gap: $size;
@@ -41,9 +40,15 @@
     .gv#{$x}#{$ext} { row-gap: $size; }
     .gh#{$x}#{$ext} { column-gap: $size; }
   }
+  .mr-auto#{$ext} { margin-right: auto; }
+  .ml-auto#{$ext} { margin-left:  auto; }
 }
 
 @include expand-sizes("");
+
+@media #{$media-breakpoint-small} {
+  @include expand-sizes("-s");
+}
 
 @media #{$media-breakpoint-medium} {
   @include expand-sizes("-m");

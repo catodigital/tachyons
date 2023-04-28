@@ -20,12 +20,28 @@
 
 @use "vars";
 
+.mw1  {  max-width: 1rem; }
+.mw2  {  max-width: 2rem; }
+.mw3  {  max-width: 4rem; }
+.mw4  {  max-width: 8rem; }
+.mw5  {  max-width: 16rem; }
+.mw6  {  max-width: 32rem; }
+.mw7  {  max-width: 48rem; }
+.mw8  {  max-width: 64rem; }
+.mw9  {  max-width: 96rem; }
+
 @mixin expand-width-height($ext) {
   @each $letter, $direction in ("w": "width", "h": "height") {
-    @each $size in (10, 25, 33, 50, 66, 75, 100) {
-      @each $ltype, $ptype in ("": "", "min": "min-", "max": "max-") {
+    @each $ltype, $ptype in ("": "", "min": "min-", "max": "max-") {
+      @each $size in (10, 25, 33, 50, 66, 75, 100) {
         .#{$letter}#{$ltype}-#{$size}#{$ext} { #{$ptype}#{$direction}: #{$size}#{"%"}; }
         .v#{$letter}#{$ltype}-#{$size}#{$ext} { #{$ptype}#{$direction}: #{$size}v#{$letter}; }
+      }
+      $x: 1;
+      @each $n in $fibonacci {
+        $size: #{$n}rem;
+        .#{$letter}#{$ltype}#{$x}#{$ext} { #{$ptype}#{$direction}: #{$size}; }
+        $x: $x + 1;
       }
     }
     .#{$letter}-auto#{$ext} { #{$direction}: auto; }

@@ -13,25 +13,12 @@
 
 */
 
-.word-normal { word-break: normal; }
-.word-wrap { word-break: break-all; }
-.word-nowrap { word-break: keep-all; }
-
-@media #{$media-breakpoint-small} {
-  .word-normal-s { word-break: normal; }
-  .word-wrap-s { word-break: break-all; }
-  .word-nowrap-s { word-break: keep-all; }
+@mixin word-breaks($ext) {
+.word-normal#{$ext} { word-break: normal; }
+.word-wrap#{$ext} { word-break: break-all; }
+.word-nowrap#{$ext} { word-break: keep-all; }
 }
 
-@media #{$media-breakpoint-medium} {
-  .word-normal-m { word-break: normal; }
-  .word-wrap-m { word-break: break-all; }
-  .word-nowrap-m { word-break: keep-all; }
+@include map-sizes using ($ext) {
+  @include word-breaks($ext);
 }
-
-@media #{$media-breakpoint-large} {
-  .word-normal-l { word-break: normal; }
-  .word-wrap-l { word-break: break-all; }
-  .word-nowrap-l { word-break: keep-all; }
-}
-

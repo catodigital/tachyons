@@ -24,8 +24,6 @@
 // $size-7: 16rem;
 // $size-8: 32rem;
 // $sizes: $size-0, $size-1, $size-2, $size-3, $size-4, $size-5, $size-6, $size-7, $size-8;
-// // is there a way to get the length of a list in scss? For now just this
-// $nsizes: 8;
 
 /*
    Modifiers:
@@ -37,6 +35,24 @@
      b = bottom
      l = left
 */
+@use "sass:math";
+@use "sass:list";
+
+$fibonacci: (1, 2, 3, 5, 8, 13, 21, 34, 55, 89);
+
+// fib, adjusting where first elem is 0.25rem and scaling into px, * fib and back to rem
+// easier by hand than code
+$sizes: (0, .25, .5, 1, 2, 3, 5, 8, 13, 21, 34);
+
+@function get-size($x) {
+  @return #{list.nth($sizes, $x + 1)}rem;
+  // @if $x > 0 {
+  //   @return #{math.pow(2, $x - 3)}rem;
+  // } @else {
+  //   @return 0;
+  // }
+}
+
 $sides: ("l": "-left", "r": "-right", "b": "-bottom", "t": "-top");
 $spans: ("a": "", "v": "vert", "h": "horiz");
 
@@ -47,3 +63,19 @@ $breakpoint-large: 60em;
 $media-breakpoint-small: "screen and (min-width: #{$breakpoint-small})";
 $media-breakpoint-medium: "screen and (min-width: #{$breakpoint-medium})";
 $media-breakpoint-large: "screen and (min-width: #{$breakpoint-large})";
+
+$size_opts: ("", "-s", "-m", "-l");
+$size_map: ("": "", "-s": #{$media-breakpoint-small}, "-m": #{$media-breakpoint-medium}, "-l": #{$media-breakpoint-large});
+
+@mixin map-sizes {
+  $size_map: ("": "", "-s": $media-breakpoint-small, "-m": $media-breakpoint-medium, "-l": $media-breakpoint-large);
+  @each $ext, $break in ($size_map) {
+    @if $ext == "" {
+      @content($ext);
+    } @else {
+      @media #{$break} {
+        @content($ext);
+      }
+    }
+  }
+}

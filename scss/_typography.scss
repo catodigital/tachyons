@@ -1,99 +1,32 @@
 @use "vars";
-/*
 
-   TYPOGRAPHY
-   http://tachyons.io/docs/typography/measure/
+@mixin typography($ext) {
+  /* Measure is limited to 66 characters */
+  .measure#{$ext} { max-width: 66ch; }
 
-   Media Query Extensions:
-     -s = small
-     -m = medium
-     -l = large
+  /* Measure is limited to ~80 characters */
+  .measure-wide#{$ext} { max-width: 80ch; }
 
-*/
+  /* Measure is limited to 45 characters */
+  .measure-narrow#{$ext} { max-width: 45ch; }
 
-
-
-/* Measure is limited to 66 characters */
-.measure {
-  max-width: 66ch;
-}
-
-/* Measure is limited to ~80 characters */
-.measure-wide {
-  max-width: 80ch;
-}
-
-/* Measure is limited to 45 characters */
-.measure-narrow {
-  max-width: 45ch;
-}
-
-/* Book paragraph style - paragraphs are indented with no vertical spacing. */
-.indent {
-  text-indent: 1em;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.small-caps {
-  font-variant: small-caps;
-}
-
-/* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
-
-.truncate {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-@media #{$media-breakpoint-small} {
-  .measure-s { max-width: 66ch; }
-  .measure-wide-s { max-width: 80ch; }
-  .measure-narrow-s { max-width: 45ch; }
-  .small-caps-s { font-variant: small-caps; }
-  .indent-s {
+  /* Book paragraph style - paragraphs are indented with no vertical spacing. */
+  .book-p#{$ext} { // was .indent, which I felt was incorrect & generic -BJG
     text-indent: 1em;
     margin-top: 0;
     margin-bottom: 0;
   }
-  .truncate-s {
+
+  .small-caps#{$ext} { font-variant: small-caps; }
+
+  /* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
+  .truncate#{$ext} {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 }
 
-@media #{$media-breakpoint-medium} {
-  .measure-m { max-width: 66ch; }
-  .measure-wide-m { max-width: 80ch; }
-  .measure-narrow-m { max-width: 45ch; }
-  .small-caps-m { font-variant: small-caps; }
-  .indent-m {
-    text-indent: 1em;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .truncate-m {
-    white-mpace: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-
-@media #{$media-breakpoint-large} {
-  .measure-l { max-width: 66ch; }
-  .measure-wide-l { max-width: 80ch; }
-  .measure-narrow-l { max-width: 45ch; }
-  .small-caps-l { font-variant: small-caps; }
-  .indent-l {
-    text-indent: 1em;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .truncate-l {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+@include map-sizes using ($ext) {
+  @include typography($ext);
 }

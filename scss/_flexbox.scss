@@ -12,71 +12,47 @@
 
 /* 1. Fix for Chrome 44 bug.
  * https://code.google.com/p/chromium/issues/detail?id=506893 */
-.flex-auto {
-  flex: 1 1 auto;
-  min-width: 0; /* 1 */
-  min-height: 0; /* 1 */
-}
-
-.flex-none { flex: none; }
-
-
-.flex-grow-0 { flex-grow: 0; }
-.flex-grow-1 { flex-grow: 1; }
-
-.flex-shrink-0 { flex-shrink: 0; }
-.flex-shrink-1 { flex-shrink: 1; }
-
-@media #{$media-breakpoint-small} {
-  .flex-s { display: flex; }
-  .inline-flex-s { display: inline-flex; }
-  .flex-auto-s {
+ @mixin flex-things($ext) {
+  .flex-auto#{$ext} {
     flex: 1 1 auto;
     min-width: 0; /* 1 */
     min-height: 0; /* 1 */
   }
-  .flex-none-s { flex: none; }
-
-
-
-
-  .flex-grow-0-s { flex-grow: 0; }
-  .flex-grow-1-s { flex-grow: 1; }
-
-  .flex-shrink-0-s { flex-shrink: 0; }
-  .flex-shrink-1-s { flex-shrink: 1; }
-}
-@media #{$media-breakpoint-medium} {
-  .flex-m { display: flex; }
-  .inline-flex-m { display: inline-flex; }
-  .flex-auto-m {
-    flex: 1 1 auto;
-    min-width: 0; /* 1 */
-    min-height: 0; /* 1 */
+  .flex-none#{$ext} { flex: none; }
+  .flex-start#{$ext} {
+    display: flex;
+    align-items: flex-start;
   }
-  .flex-none-m { flex: none; }
-
-
-  .flex-grow-0-m { flex-grow: 0; }
-  .flex-grow-1-m { flex-grow: 1; }
-
-  .flex-shrink-0-m { flex-shrink: 0; }
-  .flex-shrink-1-m { flex-shrink: 1; }
+  .flex-items#{$ext} {
+    display: flex;
+    align-items: center;
+  }
+  .flex-center#{$ext} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-between#{$ext} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* grow-shrink */
+  .flex-grow-0#{$ext} { flex-grow: 0; }
+  .flex-grow-1#{$ext} { flex-grow: 1; }
+  .flex-shrink-0#{$ext} { flex-shrink: 0; }
+  .flex-shrink-1#{$ext} { flex-shrink: 1; }
+  /* wraps */
+  .flex-wrap#{$ext}   { flex-wrap: wrap; }
+  .flex-nowrap#{$ext}   { flex-wrap: nowrap; }
+  .flex-wrap-reverse#{$ext}   { flex-wrap: wrap-reverse; }
+  /* directions */
+  .flex-column#{$ext}  { flex-direction: column; }
+  .flex-row#{$ext}     { flex-direction: row; }
+  .flex-column-reverse#{$ext}  { flex-direction: column-reverse; }
+  .flex-row-reverse#{$ext}     { flex-direction: row-reverse; }
 }
 
-@media #{$media-breakpoint-large} {
-  .flex-l { display: flex; }
-  .inline-flex-l { display: inline-flex; }
-  .flex-auto-l {
-    flex: 1 1 auto;
-    min-width: 0; /* 1 */
-    min-height: 0; /* 1 */
-  }
-  .flex-none-l { flex: none; }
-
-  .flex-grow-0-l { flex-grow: 0; }
-  .flex-grow-1-l { flex-grow: 1; }
-
-  .flex-shrink-0-l { flex-shrink: 0; }
-  .flex-shrink-1-l { flex-shrink: 1; }
+@include map-sizes using ($ext) {
+  @include flex-things($ext);
 }

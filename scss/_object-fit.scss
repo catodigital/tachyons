@@ -1,0 +1,18 @@
+@use "vars";
+/*
+
+.fit-cover
+.fit-contain
+etc
+
+*/
+
+@mixin object-fit($ext) {
+  @each $type in ("contain", "cover", "fill", "none", "scale-down") {
+    .fit-#{$type}#{$ext} { object-fit: #{$type}; }
+  }
+}
+
+@include map-sizes using ($ext) {
+  @include object-fit($ext);
+}

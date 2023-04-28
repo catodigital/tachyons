@@ -1,0 +1,44 @@
+@use "vars";
+/*
+
+  TEXT ALIGN
+  Docs: http://tachyons.io/docs/typography/text-align/
+
+  Base
+    t = text-align
+
+  Modifiers
+    l = left
+    r = right
+    c = center
+    j = justify
+
+  Media Query Extensions:
+    -s = small
+    -m = medium
+    -l = large
+
+*/
+
+.strike       { text-decoration: line-through; }
+.underline    { text-decoration: underline; }
+.no-underline { text-decoration: none; }
+.ttc { text-transform: capitalize; }
+.ttl { text-transform: lowercase; }
+.ttu { text-transform: uppercase; }
+.ttn { text-transform: none; }
+
+@mixin align-text($ext) {
+  .tl#{$ext}  { text-align: left; }
+  .tr#{$ext}  { text-align: right; }
+  .tc#{$ext}  { text-align: center; }
+  .tj#{$ext}  { text-align: justify; }
+  .center#{$ext} {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@include map-sizes using ($ext) {
+  @include align-text($ext);
+}

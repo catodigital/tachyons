@@ -10,33 +10,14 @@
 
 */
 
-.self-start    { align-self: flex-start; }
-.self-end      { align-self: flex-end; }
-.self-center   { align-self: center; }
-.self-baseline { align-self: baseline; }
-.self-stretch  { align-self: stretch; }
-
-@media #{$media-breakpoint-small} {
-  .self-start-s { align-self: flex-start; }
-  .self-end-s { align-self: flex-end; }
-  .self-center-s { align-self: center; }
-  .self-baseline-s { align-self: baseline; }
-  .self-stretch-s { align-self: stretch; }
+@mixin align-self($ext) {
+.self-start#{$ext}    { align-self: flex-start; }
+.self-end#{$ext}      { align-self: flex-end; }
+.self-center#{$ext}   { align-self: center; }
+.self-baseline#{$ext} { align-self: baseline; }
+.self-stretch#{$ext}  { align-self: stretch; }
 }
 
-@media #{$media-breakpoint-medium} {
-  .self-start-m { align-self: flex-start; }
-  .self-end-m { align-self: flex-end; }
-  .self-center-m { align-self: center; }
-  .self-baseline-m { align-self: baseline; }
-  .self-stretch-m { align-self: stretch; }
-
-}
-
-@media #{$media-breakpoint-large} {
-  .self-start-l { align-self: flex-start; }
-  .self-end-l { align-self: flex-end; }
-  .self-center-l { align-self: center; }
-  .self-baseline-l { align-self: baseline; }
-  .self-stretch-l { align-self: stretch; }
+@include map-sizes using ($ext) {
+  @include align-self($ext);
 }

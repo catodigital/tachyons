@@ -1,0 +1,22 @@
+@use "vars";
+/*
+
+   VERTICAL ALIGN
+
+   Media Query Extensions:
+     -s = small
+     -m = medium
+     -l = large
+
+*/
+
+@mixin align-vertical($ext) {
+.v-base#{$ext}    { vertical-align: baseline; }
+.v-mid#{$ext}     { vertical-align: middle; }
+.v-top#{$ext}     { vertical-align: top; }
+.v-btm#{$ext}     { vertical-align: bottom; }
+}
+
+@include map-sizes using ($ext) {
+  @include align-vertical($ext);
+}

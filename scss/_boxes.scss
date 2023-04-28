@@ -1,0 +1,43 @@
+@use "vars";
+/*
+
+  BOX-SHADOW
+  Docs: http://tachyons.io/docs/themes/box-shadow/
+  Layered shadows: https://tobiasahlin.com/blog/layered-smooth-box-shadows/
+
+  Media Query Extensions:
+   -s = small
+   -m = medium
+   -l = large
+
+ */
+
+ *,
+ *::before,
+ *::after,
+ .border-box,
+ .border-box::before,
+ .border-box::after { box-sizing: border-box; }
+ .content-box { box-sizing: content-box; }
+
+ @mixin box-shadow($ext) {
+  .shadow-border#{$ext} { box-shadow: inset 0 0 1px 0 rgba(0,0,0,0.125); }
+  .shadow-border-light#{$ext}  { box-shadow: inset 0 0 1px 0 rgba(255,255,255,0.125); }
+  .shadow-border-solid#{$ext}  { box-shadow: inset 0 0 1px 0 currentColor; }
+  .shadow-border-2#{$ext} { box-shadow: inset 0 0 2px 0 rgba(255,255,255,.125); }
+  .shadow-border-light-2#{$ext} {  box-shadow: inset 0 0 2px 0 rgba(0,0,0,0.125); }
+  .shadow-border-solid-2#{$ext} {  box-shadow: inset 0 0 2px 0 currentColor; }
+
+  .shadow-1#{$ext} { box-shadow: 0 1px 1px rgba(0,0,0,0.125), 0 2px 2px rgba(0,0,0,0.125), 0 4px 4px rgba(0,0,0,0.125), 0 8px 8px rgba(0,0,0,0.125), 0 16px 16px rgba(0,0,0,0.125); }
+  .shadow-2#{$ext} {  box-shadow: 0 1px 1px rgba(0,0,0,0.15), 0 2px 2px rgba(0,0,0,0.15), 0 4px 4px rgba(0,0,0,0.15), 0 8px 8px rgba(0,0,0,0.15); }
+  .shadow-3#{$ext} {  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 0 2px 2px rgba(0,0,0,0.11), 0 4px 4px rgba(0,0,0,0.11), 0 8px 8px rgba(0,0,0,0.11), 0 16px 16px rgba(0,0,0,0.11), 0 32px 32px rgba(0,0,0,0.11); }
+  .shadow-4#{$ext} {  box-shadow: 0 1px 1px rgba(0,0,0,0.25), 0 2px 2px rgba(0,0,0,0.20), 0 4px 4px rgba(0,0,0,0.15), 0 8px 8px rgba(0,0,0,0.10), 0 16px 16px rgba(0,0,0,0.05); }
+  .shadow-5#{$ext} {  box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20); }
+  .shadow-6#{$ext} {  box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07); }
+  .shadow-7#{$ext} {  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 0 2px 2px rgba(0,0,0,0.11), 0 4px 4px rgba(0,0,0,0.11), 0 6px 8px rgba(0,0,0,0.11), 0 8px 16px rgba(0,0,0,0.11); }
+  .shadow-8#{$ext} {  box-shadow: 0 2px 1px rgba(0,0,0,0.09), 0 4px 2px rgba(0,0,0,0.09), 0 8px 4px rgba(0,0,0,0.09), 0 16px 8px rgba(0,0,0,0.09), 0 32px 16px rgba(0,0,0,0.09); }
+}
+
+@include map-sizes using ($ext) {
+  @include box-shadow($ext);
+}

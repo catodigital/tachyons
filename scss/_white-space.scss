@@ -11,28 +11,14 @@
 */
 
 
+@mixin white-space($ext) {
 .ws-normal { white-space: normal; }
 .nowrap { white-space: nowrap; }
 .pre { white-space: pre; }
 .pre-wrap { white-space: pre-wrap; }
-
-@media #{$media-breakpoint-small} {
-  .ws-normal-s { white-space: normal; }
-  .nowrap-s { white-space: nowrap; }
-  .pre-s { white-space: pre; }
-  .pre-wrap-s { white-space: pre-wrap; }
 }
 
-@media #{$media-breakpoint-medium} {
-  .ws-normal-m { white-space: normal; }
-  .nowrap-m { white-space: nowrap; }
-  .pre-m { white-space: pre; }
-  .pre-wrap-m { white-space: pre-wrap; }
-}
 
-@media #{$media-breakpoint-large} {
-  .ws-normal-l { white-space: normal; }
-  .nowrap-l { white-space: nowrap; }
-  .pre-l { white-space: pre; }
-  .pre-wrap-l { white-space: pre-wrap; }
+@include map-sizes using ($ext) {
+  @include white-space($ext);
 }
