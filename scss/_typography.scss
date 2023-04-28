@@ -11,10 +11,15 @@
   .measure-narrow#{$ext} { max-width: 45ch; }
 
   /* Book paragraph style - paragraphs are indented with no vertical spacing. */
-  .book-p#{$ext} { // was .indent, which I felt was incorrect & generic -BJG
-    text-indent: 1em;
+  p.book-indent#{$ext}, .book-indent#{$ext} p {
+    text-indent: 4rem;
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .hanging-indent#{$ext} {
+    text-indent: -4rem;
+    padding-left: 4rem;
   }
 
   .small-caps#{$ext} { font-variant: small-caps; }

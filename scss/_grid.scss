@@ -13,12 +13,31 @@
 .flow-row { grid-auto-flow: row; }
 .flow-column { grid-auto-flow: column; }
 .flow-dense { grid-auto-flow: dense; }
+.row-auto  { grid-row: auto; }
 
-
-@media #{$media-breakpoint-small} {
+@mixin grid-column($ext) {
+  @for $x from 1 thorugh 16 {
+    .col-#{$x}#{$ext} { grid-column: span #{$x} / span #{$x}; }
+    .cols-#{$x}#{$ext} { grid-template-columns: repeat(#{$x}, 1fr) }
+    .start-#{$x}#{$ext} { grid-column-start: #{$x}; }
+    .end-#{$x}#{$ext} { grid-column-end: #{$x}; }
+    .row-start-#{$x}#{$ext} { grid-row-start: #{$x}; }
+    .row-end-#{$x}#{$ext} { grid-row-start: #{$x}; }
+  }
+  .col-full#{$ext} { grid-column: 1 / -1; }
+  .col-center1#{$ext} { grid-column: 2 / -2; }
+  .col-center2#{$ext} { grid-column: 3 / -3; }
+  .col-center3#{$ext} { grid-column: 4 / -4; }
+  .col-center4#{$ext} { grid-column: 6 / -6; }
+  .col-auto#{$ext} { grid-column: auto; }
+  @each $x in (4, 8, 12, 16, 20, 24) {
+    .cols-min-#{$x}#{$ext} { grid-template-columns: repeat(auto-fill, minmax( #{$x}rem, 1fr )); }
+  }
+  .masonry#{$ext} { grid-template-columns: masonry }
+  .subgrid#{$ext} { grid-template-columns: subgrid }
+  .cols-none#{$ext} { grid-template-columns: none }
 }
-@media #{$media-breakpoint-medium} {
-}
 
-@media #{$media-breakpoint-large} {
+@include map-sizes using ($ext) {
+  @include grid-column($ext);
 }

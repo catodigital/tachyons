@@ -11077,10 +11077,15 @@ etc
 }
 
 /* Book paragraph style - paragraphs are indented with no vertical spacing. */
-.book-p {
-  text-indent: 1em;
+.book-indent, .book-indent p {
+  text-indent: 4rem;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.hanging-indent {
+  text-indent: -4rem;
+  padding-left: 4rem;
 }
 
 .small-caps {
@@ -11108,10 +11113,14 @@ etc
     max-width: 45ch;
   }
   /* Book paragraph style - paragraphs are indented with no vertical spacing. */
-  .book-p-s {
-    text-indent: 1em;
+  .book-indent-s, .book-indent-s p {
+    text-indent: 4rem;
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .hanging-indent-s {
+    text-indent: -4rem;
+    padding-left: 4rem;
   }
   .small-caps-s {
     font-variant: small-caps;
@@ -11137,10 +11146,14 @@ etc
     max-width: 45ch;
   }
   /* Book paragraph style - paragraphs are indented with no vertical spacing. */
-  .book-p-m {
-    text-indent: 1em;
+  .book-indent-m, .book-indent-m p {
+    text-indent: 4rem;
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .hanging-indent-m {
+    text-indent: -4rem;
+    padding-left: 4rem;
   }
   .small-caps-m {
     font-variant: small-caps;
@@ -11166,10 +11179,14 @@ etc
     max-width: 45ch;
   }
   /* Book paragraph style - paragraphs are indented with no vertical spacing. */
-  .book-p-l {
-    text-indent: 1em;
+  .book-indent-l, .book-indent-l p {
+    text-indent: 4rem;
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .hanging-indent-l {
+    text-indent: -4rem;
+    padding-left: 4rem;
   }
   .small-caps-l {
     font-variant: small-caps;
