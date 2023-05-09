@@ -29,6 +29,9 @@
 .mw7  {  max-width: 48rem; }
 .mw8  {  max-width: 64rem; }
 .mw9  {  max-width: 96rem; }
+.wmax-content {
+  width: max-content;
+}
 
 @mixin expand-width-height($ext) {
   @each $letter, $direction in ("w": "width", "h": "height") {

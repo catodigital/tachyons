@@ -1,4 +1,4 @@
-$ /Users/brandon/share/dev/tachyons-field/node_modules/.bin/sass scss/tachyons-field.scss
+$ /Users/jakew/cato/tachyons/node_modules/.bin/sass scss/tachyons-field.scss
 /*! TACHYONS v5.0.0.beta | http://tachyons.io */
 /*
  *
@@ -5851,6 +5851,10 @@ etc
 
 .mw9 {
   max-width: 96rem;
+}
+
+.wmax-content {
+  width: max-content;
 }
 
 .w-10 {
