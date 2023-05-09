@@ -16,7 +16,7 @@
 .row-auto  { grid-row: auto; }
 
 @mixin grid-column($ext) {
-  @for $x from 1 thorugh 16 {
+  @for $x from 1 through 16 {
     .col-#{$x}#{$ext} { grid-column: span #{$x} / span #{$x}; }
     .cols-#{$x}#{$ext} { grid-template-columns: repeat(#{$x}, 1fr) }
     .start-#{$x}#{$ext} { grid-column-start: #{$x}; }

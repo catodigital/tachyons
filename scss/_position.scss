@@ -12,11 +12,11 @@
 */
 
 @mixin position($ext) {
-  .static { position: static; }
-  .relative  { position: relative; }
-  .absolute  { position: absolute; }
-  .fixed  { position: fixed; }
-  .sticky  { position: sticky; }
+  .static#{$ext} { position: static; }
+  .relative#{$ext}  { position: relative; }
+  .absolute#{$ext}  { position: absolute; }
+  .fixed#{$ext}  { position: fixed; }
+  .sticky#{$ext}  { position: sticky; }
 }
 
 @include map-sizes using ($ext) {

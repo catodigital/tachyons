@@ -1,29 +1,4 @@
 @use "vars";
-/*
-
-   FONT WEIGHT
-   Docs: http://tachyons.io/docs/typography/font-weight/
-
-   Base
-     fw = font-weight
-
-   Modifiers:
-     1 = literal value 100
-     2 = literal value 200
-     3 = literal value 300
-     4 = literal value 400
-     5 = literal value 500
-     6 = literal value 600
-     7 = literal value 700
-     8 = literal value 800
-     9 = literal value 900
-
-   Media Query Extensions:
-     -s = small
-     -m = medium
-     -l = large
-
-*/
 
 .i         { font-style: italic; }
 .fs-normal { font-style: normal; }
@@ -38,3 +13,22 @@
 .fw7    { font-weight: 700; }
 .fw8    { font-weight: 800; }
 .fw9    { font-weight: 900; }
+
+@mixin font-size($ext) {
+.f1#{$ext} { font-size: .75rem; }
+.f2#{$ext} { font-size: .875rem; }
+.f3#{$ext} { font-size: 1rem; }
+.f4#{$ext} { font-size: 1.125rem; }
+.f5#{$ext} { font-size: 1.25rem; }
+.f6#{$ext} { font-size: 1.5rem; }
+.f7#{$ext} { font-size: 2rem; }
+.f8#{$ext} { font-size: 3rem; }
+.f9#{$ext} { font-size: 4rem; }
+.f10#{$ext} { font-size: 6rem; }
+.f11#{$ext} { font-size: 8rem; }
+.f12#{$ext} { font-size: 12rem; }
+}
+
+@include map-sizes using ($ext) {
+  @include font-size($ext);
+}

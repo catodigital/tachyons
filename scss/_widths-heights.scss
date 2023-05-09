@@ -33,7 +33,7 @@
 @mixin expand-width-height($ext) {
   @each $letter, $direction in ("w": "width", "h": "height") {
     @each $ltype, $ptype in ("": "", "min": "min-", "max": "max-") {
-      @each $size in (10, 25, 33, 50, 66, 75, 100) {
+      @each $size in (10, 15, 20, 25, 33, 50, 66, 75, 100) {
         .#{$letter}#{$ltype}-#{$size}#{$ext} { #{$ptype}#{$direction}: #{$size}#{"%"}; }
         .v#{$letter}#{$ltype}-#{$size}#{$ext} { #{$ptype}#{$direction}: #{$size}v#{$letter}; }
       }
