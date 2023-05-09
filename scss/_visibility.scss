@@ -17,14 +17,26 @@
 */
 
 @mixin visibility($ext) {
-.clip#{$ext} {
-  position: fixed !important;
-  _position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
+  .clip#{$ext} {
+    position: fixed !important;
+    _position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  .visible#{$ext} { visibility: visible; }
+  .hidden#{$ext} { visibility: hidden; }
 }
-.visible#{$ext} { visibility: visible; }
-.hidden#{$ext} { visibility: hidden; }
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
 
 @include map-sizes using ($ext) {
