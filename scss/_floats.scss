@@ -37,9 +37,9 @@
 .cn { clear: none; }
 
 @mixin floats($ext) {
-  .fl { float: left; }
-  .fr { float: right; }
-  .fn { float: none; }
+  .fl#{$ext} { float: left; }
+  .fr#{$ext} { float: right; }
+  .fn#{$ext} { float: none; }
 }
 
 @include map-sizes using ($ext) {

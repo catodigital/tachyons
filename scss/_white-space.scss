@@ -12,10 +12,10 @@
 
 
 @mixin white-space($ext) {
-.ws-normal { white-space: normal; }
-.nowrap { white-space: nowrap; }
-.pre { white-space: pre; }
-.pre-wrap { white-space: pre-wrap; }
+.ws-normal#{$ext} { white-space: normal; }
+.nowrap#{$ext} { white-space: nowrap; }
+.pre#{$ext} { white-space: pre; }
+.pre-wrap#{$ext} { white-space: pre-wrap; }
 }
 
 

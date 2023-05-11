@@ -11,30 +11,30 @@
 */
 
 @mixin aligns($ext) {
-.items-start    { align-items: flex-start; }
-.items-end      { align-items: flex-end; }
-.items-center   { align-items: center; }
-.items-baseline { align-items: baseline; }
-.items-stretch  { align-items: stretch; }
+.items-start#{$ext}    { align-items: flex-start; }
+.items-end#{$ext}      { align-items: flex-end; }
+.items-center#{$ext}   { align-items: center; }
+.items-baseline#{$ext} { align-items: baseline; }
+.items-stretch#{$ext}  { align-items: stretch; }
 
-.self-start    { align-self: flex-start; }
-.self-end      { align-self: flex-end; }
-.self-center   { align-self: center; }
-.self-baseline { align-self: baseline; }
-.self-stretch  { align-self: stretch; }
+.self-start#{$ext}    { align-self: flex-start; }
+.self-end#{$ext}      { align-self: flex-end; }
+.self-center#{$ext}   { align-self: center; }
+.self-baseline#{$ext} { align-self: baseline; }
+.self-stretch#{$ext}  { align-self: stretch; }
 
-.justify-start   { justify-content: flex-start; }
-.justify-end     { justify-content: flex-end; }
-.justify-center  { justify-content: center; }
-.justify-between { justify-content: space-between; }
-.justify-around  { justify-content: space-around; }
+.justify-start#{$ext}   { justify-content: flex-start; }
+.justify-end#{$ext}     { justify-content: flex-end; }
+.justify-center#{$ext}  { justify-content: center; }
+.justify-between#{$ext} { justify-content: space-between; }
+.justify-around#{$ext}  { justify-content: space-around; }
 
-.content-start   { align-content: flex-start; }
-.content-end     { align-content: flex-end; }
-.content-center  { align-content: center; }
-.content-between { align-content: space-between; }
-.content-around  { align-content: space-around; }
-.content-stretch { align-content: stretch; }
+.content-start#{$ext}   { align-content: flex-start; }
+.content-end#{$ext}     { align-content: flex-end; }
+.content-center#{$ext}  { align-content: center; }
+.content-between#{$ext} { align-content: space-between; }
+.content-around#{$ext}  { align-content: space-around; }
+.content-stretch#{$ext} { align-content: stretch; }
 }
 
 @include map-sizes using ($ext) {

@@ -12,9 +12,9 @@
 */
 
 @mixin letter-spacing($ext) {
-.ls       { letter-spacing:  .1em; }
-.ls-tight { letter-spacing: -.05em; }
-.ls-wide  { letter-spacing:  .25em; }
+.ls#{$ext}       { letter-spacing:  .1em; }
+.ls-tight#{$ext} { letter-spacing: -.05em; }
+.ls-wide#{$ext}  { letter-spacing:  .25em; }
 }
 
 @include map-sizes using ($ext) {
