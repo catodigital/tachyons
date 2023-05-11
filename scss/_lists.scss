@@ -6,4 +6,14 @@
 
 */
 
-.list-no {         list-style-type: none; }
+.list-no { list-style-type: none; }
+
+@mixin list-indent($ext) {
+  @for $x from 0 through 6 {
+    ul.li#{$x}#{$ext} { padding-inline: #{calc(1rem + get-size($x))}; }
+  }
+}
+
+@include map-sizes using ($ext) {
+  @include list-indent($ext);
+}
