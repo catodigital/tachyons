@@ -45,7 +45,7 @@ $fibonacci: (1, 2, 3, 5, 8, 13, 21, 34, 55, 89);
 $sizes: (0, .25, .5, 1, 2, 3, 5, 8, 13, 21, 34);
 
 @function get-size($x) {
-  @return #{list.nth($sizes, $x + 1)}rem;
+  @return list.nth($sizes, $x + 1) * 1rem;
   // @if $x > 0 {
   //   @return #{math.pow(2, $x - 3)}rem;
   // } @else {

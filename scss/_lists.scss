@@ -10,7 +10,7 @@
 
 @mixin list-indent($ext) {
   @for $x from 0 through 6 {
-    ul.li#{$x}#{$ext} { padding-inline: #{calc(1rem + get-size($x))}; }
+    ul.li#{$x}#{$ext} { padding-inline: #{1rem + get-size($x)}; }
   }
 }
 
