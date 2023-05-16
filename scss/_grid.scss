@@ -18,7 +18,7 @@
 @mixin grid-column($ext) {
   @for $x from 1 through 16 {
     .col-#{$x}#{$ext} { grid-column: span #{$x} / span #{$x}; }
-    .cols-#{$x}#{$ext} { grid-template-columns: repeat(#{$x}, 1fr) }
+    .cols-#{$x}#{$ext} { grid-template-columns: repeat(#{$x}, auto) }
     .start-#{$x}#{$ext} { grid-column-start: #{$x}; }
     .end-#{$x}#{$ext} { grid-column-end: #{$x}; }
     .row-start-#{$x}#{$ext} { grid-row-start: #{$x}; }
