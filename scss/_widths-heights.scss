@@ -20,6 +20,16 @@
 
 @use "vars";
 
+.mw1  {  max-width: 1rem; }
+.mw2  {  max-width: 2rem; }
+.mw3  {  max-width: 4rem; }
+.mw4  {  max-width: 8rem; }
+.mw5  {  max-width: 16rem; }
+.mw6  {  max-width: 32rem; }
+.mw7  {  max-width: 48rem; }
+.mw8  {  max-width: 64rem; }
+.mw9  {  max-width: 96rem; }
+
 @mixin expand-width-height($ext) {
   @each $letter, $direction in ("w": "width", "h": "height") {
     @each $ltype, $ptype in ("": "", "min": "min-", "max": "max-") {
@@ -41,22 +51,11 @@
   }
 }
 
-@mixin expand-max-width($ext) {
-  $sizes: (1, 2, 4, 8, 16, 32, 48, 64, 96);
-  @for $i from 1 through length($sizes) {
-    $size: nth($sizes, $i);
-    .mw#{$i}#{$ext} { max-width: $size * 1rem; }
-  }
-}
-
 @include expand-width-height("");
-@include expand-max-width("");
 @media #{$media-breakpoint-medium} {
   @include expand-width-height("-m");
-  @include expand-max-width("-m");
 }
 
 @media #{$media-breakpoint-large} {
   @include expand-width-height("-l");
-  @include expand-max-width("-l");
 }
