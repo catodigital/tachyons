@@ -42,10 +42,10 @@
 }
 
 @mixin expand-max-width($ext) {
-  $x: 1;
-  @each $size in (1, 2, 4, 8, 16, 32, 48, 64, 96) {
-    .mw#{$x}#{$ext} { max-width: $size * 1rem; }
-    $x: $x + 1;
+  $sizes: (1, 2, 4, 8, 16, 32, 48, 64, 96);
+  @for $i from 1 through length($sizes) {
+    $size: nth($sizes, $i);
+    .mw#{$i}#{$ext} { max-width: $size * 1rem; }
   }
 }
 
