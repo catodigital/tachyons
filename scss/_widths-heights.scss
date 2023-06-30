@@ -20,19 +20,6 @@
 
 @use "vars";
 
-.mw1  {  max-width: 1rem; }
-.mw2  {  max-width: 2rem; }
-.mw3  {  max-width: 4rem; }
-.mw4  {  max-width: 8rem; }
-.mw5  {  max-width: 16rem; }
-.mw6  {  max-width: 32rem; }
-.mw7  {  max-width: 48rem; }
-.mw8  {  max-width: 64rem; }
-.mw9  {  max-width: 96rem; }
-.wmax-content {
-  width: max-content;
-}
-
 @mixin expand-width-height($ext) {
   @each $letter, $direction in ("w": "width", "h": "height") {
     @each $ltype, $ptype in ("": "", "min": "min-", "max": "max-") {
@@ -50,14 +37,26 @@
     .#{$letter}-auto#{$ext} { #{$direction}: auto; }
     .#{$letter}min-auto#{$ext} { min-#{$direction}: auto; }
     .#{$letter}max-auto#{$ext} { max-#{$direction}: auto; }
+    .#{$letter}max-content#{$ext} { #{$direction}: max-content; }
+  }
+}
+
+@mixin expand-max-width($ext) {
+  $x: 1;
+  @each $size in (1, 2, 4, 8, 16, 32, 48, 64, 96) {
+    .mw#{$x}#{$ext} { max-width: $size * 1rem; }
+    $x: $x + 1;
   }
 }
 
 @include expand-width-height("");
+@include expand-max-width("");
 @media #{$media-breakpoint-medium} {
   @include expand-width-height("-m");
+  @include expand-max-width("-m");
 }
 
 @media #{$media-breakpoint-large} {
   @include expand-width-height("-l");
+  @include expand-max-width("-l");
 }
