@@ -4385,16 +4385,32 @@ etc
   flex-grow: 0;
 }
 
-.flex-grow-1 {
-  flex-grow: 1;
-}
-
 .flex-shrink-0 {
   flex-shrink: 0;
 }
 
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
 .flex-shrink-1 {
   flex-shrink: 1;
+}
+
+.flex-grow-2 {
+  flex-grow: 2;
+}
+
+.flex-shrink-2 {
+  flex-shrink: 2;
+}
+
+.flex-grow-3 {
+  flex-grow: 3;
+}
+
+.flex-shrink-3 {
+  flex-shrink: 3;
 }
 
 /* wraps */
@@ -4458,14 +4474,26 @@ etc
   .flex-grow-0-s {
     flex-grow: 0;
   }
-  .flex-grow-1-s {
-    flex-grow: 1;
-  }
   .flex-shrink-0-s {
     flex-shrink: 0;
   }
+  .flex-grow-1-s {
+    flex-grow: 1;
+  }
   .flex-shrink-1-s {
     flex-shrink: 1;
+  }
+  .flex-grow-2-s {
+    flex-grow: 2;
+  }
+  .flex-shrink-2-s {
+    flex-shrink: 2;
+  }
+  .flex-grow-3-s {
+    flex-grow: 3;
+  }
+  .flex-shrink-3-s {
+    flex-shrink: 3;
   }
   /* wraps */
   .flex-wrap-s {
@@ -4522,14 +4550,26 @@ etc
   .flex-grow-0-m {
     flex-grow: 0;
   }
-  .flex-grow-1-m {
-    flex-grow: 1;
-  }
   .flex-shrink-0-m {
     flex-shrink: 0;
   }
+  .flex-grow-1-m {
+    flex-grow: 1;
+  }
   .flex-shrink-1-m {
     flex-shrink: 1;
+  }
+  .flex-grow-2-m {
+    flex-grow: 2;
+  }
+  .flex-shrink-2-m {
+    flex-shrink: 2;
+  }
+  .flex-grow-3-m {
+    flex-grow: 3;
+  }
+  .flex-shrink-3-m {
+    flex-shrink: 3;
   }
   /* wraps */
   .flex-wrap-m {
@@ -4586,14 +4626,26 @@ etc
   .flex-grow-0-l {
     flex-grow: 0;
   }
-  .flex-grow-1-l {
-    flex-grow: 1;
-  }
   .flex-shrink-0-l {
     flex-shrink: 0;
   }
+  .flex-grow-1-l {
+    flex-grow: 1;
+  }
   .flex-shrink-1-l {
     flex-shrink: 1;
+  }
+  .flex-grow-2-l {
+    flex-grow: 2;
+  }
+  .flex-shrink-2-l {
+    flex-shrink: 2;
+  }
+  .flex-grow-3-l {
+    flex-grow: 3;
+  }
+  .flex-shrink-3-l {
+    flex-shrink: 3;
   }
   /* wraps */
   .flex-wrap-l {

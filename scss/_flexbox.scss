@@ -38,10 +38,11 @@
     justify-content: space-between;
   }
   /* grow-shrink */
-  .flex-grow-0#{$ext} { flex-grow: 0; }
-  .flex-grow-1#{$ext} { flex-grow: 1; }
-  .flex-shrink-0#{$ext} { flex-shrink: 0; }
-  .flex-shrink-1#{$ext} { flex-shrink: 1; }
+  @for $x from 0 through 3 {
+    .flex-grow-#{$x}#{$ext} { flex-grow: #{$x}; }
+    .flex-shrink-#{$x}#{$ext} { flex-shrink: #{$x}; }
+  }
+
   /* wraps */
   .flex-wrap#{$ext}   { flex-wrap: wrap; }
   .flex-nowrap#{$ext}   { flex-wrap: nowrap; }
