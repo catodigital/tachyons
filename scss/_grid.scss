@@ -16,8 +16,9 @@
 .row-auto  { grid-row: auto; }
 
 @mixin grid-column($ext) {
-  @for $x from 1 through 16 {
-    .col-#{$x}#{$ext} { grid-column: span #{$x} / span #{$x}; }
+  @for $x from 1 through 8 {
+    // span some columns
+    .span-#{$x}#{$ext} { grid-column: span #{$x} / span #{$x}; }
     .cols-#{$x}#{$ext} { grid-template-columns: repeat(#{$x}, auto) }
     @if $x > 1 {
       .icols-#{$x}#{$ext} { grid-template-columns: auto repeat(#{$x - 1}, 1fr); }
@@ -27,12 +28,14 @@
     .row-start-#{$x}#{$ext} { grid-row-start: #{$x}; }
     .row-end-#{$x}#{$ext} { grid-row-start: #{$x}; }
   }
-  .col-full#{$ext} { grid-column: 1 / -1; }
-  .col-center1#{$ext} { grid-column: 2 / -2; }
-  .col-center2#{$ext} { grid-column: 3 / -3; }
-  .col-center3#{$ext} { grid-column: 4 / -4; }
-  .col-center4#{$ext} { grid-column: 6 / -6; }
-  .col-auto#{$ext} { grid-column: auto; }
+  // span all columns
+  .span-all#{$ext} { grid-column: 1 / -1; }
+  // note: Not sure what these are doin; removed for now
+  // .span-center1#{$ext} { grid-column: 2 / -2; }
+  // .span-center2#{$ext} { grid-column: 3 / -3; }
+  // .span-center3#{$ext} { grid-column: 4 / -4; }
+  // .span-center4#{$ext} { grid-column: 6 / -6; }
+  // .span-auto#{$ext} { grid-column: auto; }
   @each $x in (4, 8, 12, 16, 20, 24) {
     .cols-min-#{$x}#{$ext} { grid-template-columns: repeat(auto-fill, minmax( #{$x}rem, 1fr )); }
   }
