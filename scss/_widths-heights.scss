@@ -44,20 +44,20 @@
         $x: $x + 1;
       }
     }
-    @each $vw in ("", "v", "w") {
-      .#{$vw}#{$letter}-auto#{$ext} { #{$direction}: auto; }
-      .#{$vw}#{$letter}min-none#{$ext} { min-#{$direction}: none; }
-      .#{$vw}#{$letter}max-none#{$ext} { max-#{$direction}: none; }
-      .#{$vw}#{$letter}max-content#{$ext} { #{$direction}: max-content; }
-    }
+    .#{$letter}-auto#{$ext} { #{$direction}: auto; }
+    .#{$letter}min-none#{$ext} { min-#{$direction}: none; }
+    .#{$letter}max-none#{$ext} { max-#{$direction}: none; }
+    .#{$letter}max-content#{$ext} { #{$direction}: max-content; }
   }
 }
 
 @include expand-width-height("");
+@media #{$media-breakpoint-small} {
+  @include expand-width-height("-s");
+}
 @media #{$media-breakpoint-medium} {
   @include expand-width-height("-m");
 }
-
 @media #{$media-breakpoint-large} {
   @include expand-width-height("-l");
 }
