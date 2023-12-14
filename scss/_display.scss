@@ -32,10 +32,8 @@
   .dib#{$ext} { display: inline-block; }
   .flex#{$ext} { display: flex; }
   .inline-flex#{$ext} { display: inline-flex; }
-  .grid#{$ext} { display: grid;
-  }
-  .inline-grid#{$ext} { display: inline-grid;
-  }
+  .grid#{$ext} { display: grid; }
+  .inline-grid#{$ext} { display: inline-grid; }
 }
 
 @include map-sizes using ($ext) {

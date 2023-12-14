@@ -44,10 +44,12 @@
         $x: $x + 1;
       }
     }
-    .#{$letter}-auto#{$ext} { #{$direction}: auto; }
-    .#{$letter}min-auto#{$ext} { min-#{$direction}: auto; }
-    .#{$letter}max-auto#{$ext} { max-#{$direction}: auto; }
-    .#{$letter}max-content#{$ext} { #{$direction}: max-content; }
+    @each $vw in ("", "v", "w") {
+      .#{$vw}#{$letter}-auto#{$ext} { #{$direction}: auto; }
+      .#{$vw}#{$letter}min-auto#{$ext} { min-#{$direction}: auto; }
+      .#{$vw}#{$letter}max-auto#{$ext} { max-#{$direction}: auto; }
+      .#{$vw}#{$letter}max-content#{$ext} { #{$direction}: max-content; }
+    }
   }
 }
 
