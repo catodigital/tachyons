@@ -46,8 +46,8 @@
     }
     @each $vw in ("", "v", "w") {
       .#{$vw}#{$letter}-auto#{$ext} { #{$direction}: auto; }
-      .#{$vw}#{$letter}min-auto#{$ext} { min-#{$direction}: auto; }
-      .#{$vw}#{$letter}max-auto#{$ext} { max-#{$direction}: auto; }
+      .#{$vw}#{$letter}min-none#{$ext} { min-#{$direction}: none; }
+      .#{$vw}#{$letter}max-none#{$ext} { max-#{$direction}: none; }
       .#{$vw}#{$letter}max-content#{$ext} { #{$direction}: max-content; }
     }
   }
