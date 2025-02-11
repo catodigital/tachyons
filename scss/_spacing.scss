@@ -25,6 +25,12 @@
         .#{$type}#{$letter}#{$x}#{$ext} {
           @include directions($prefix, $side, $size);
         }
+        // negative margins
+        @if $type == "m" and $x > 0 {
+          .m#{$letter}#{$x}n#{$ext} {
+            @include directions($prefix, $side, -$size);
+          }
+        }
       }
       .#{$type}#{$letter}-auto#{$ext} {
         @include directions($prefix, $side, auto);
@@ -56,4 +62,13 @@
 
 @media #{$media-breakpoint-large} {
   @include expand-sizes("-l");
+}
+
+.max-view-page {
+  @media (min-width: #{$breakpoint-large}) {
+    margin-left: auto;
+    margin-right: auto;
+    // align it with ph3/mh3 using the gutter
+    max-width: calc($breakpoint-large - $breakpoint-gutter);
+  }
 }

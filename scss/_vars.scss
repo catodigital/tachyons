@@ -56,9 +56,14 @@ $sizes: (0, .25, .5, 1, 2, 3, 5, 8, 13, 21, 34);
 $sides: ("l": "-left", "r": "-right", "b": "-bottom", "t": "-top");
 $spans: ("a": "", "v": "vert", "h": "horiz");
 
-$breakpoint-small: 30em;
-$breakpoint-medium: 48em;
-$breakpoint-large: 60em;
+// add this to the actual breakpoint so that other -l, -m, etc kick in BEFORE
+// the breakpoint is hit--this helps avoid the shrinking valley between the
+// beginning of a breakpoint and the addition/removal of other elements like
+// padding and margins. the gutter aligns with ph3/mh3
+$breakpoint-gutter: #{list.nth($sizes, 4)}rem;
+$breakpoint-small: 30rem;
+$breakpoint-medium: 48rem;
+$breakpoint-large: 60rem;
 
 $media-breakpoint-small: "screen and (min-width: #{$breakpoint-small})";
 $media-breakpoint-medium: "screen and (min-width: #{$breakpoint-medium})";
