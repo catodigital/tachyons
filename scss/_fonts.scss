@@ -14,19 +14,18 @@
 .fw8    { font-weight: 800; }
 .fw9    { font-weight: 900; }
 
-@mixin font-size($ext) {
-.f1#{$ext} { font-size: .75rem; }
-.f2#{$ext} { font-size: .875rem; }
-.f3#{$ext} { font-size: 1rem; }
-.f4#{$ext} { font-size: 1.125rem; }
-.f5#{$ext} { font-size: 1.25rem; }
-.f6#{$ext} { font-size: 1.5rem; }
-.f7#{$ext} { font-size: 2rem; }
-.f8#{$ext} { font-size: 3rem; }
-.f9#{$ext} { font-size: 4rem; }
-.f10#{$ext} { font-size: 6rem; }
-.f11#{$ext} { font-size: 8rem; }
-.f12#{$ext} { font-size: 12rem; }
+@mixin font-size($ext) {             // this     tach-4     tach-5
+  .f1#{$ext} { font-size: 0.75rem }  // 9pt                 12px  (0.75rem  9pt)
+  .f2#{$ext} { font-size: .875rem }  // 10.5pt   0.875rem   14px  (0.875rem 10.5pt)
+  .f3#{$ext} { font-size: 1rem }     // 12pt     1rem       16px  (1rem,    12pt)
+  .f4#{$ext} { font-size: 1.25rem }  // 15pt     1.25rem    20px  (1.25rem, 15pt)
+  .f5#{$ext} { font-size: 1.5rem }   // 18pt     1.5rem     24px  (1.5rem,  18pt)
+  .f6#{$ext} { font-size: 2rem }     // 24pt     2.25rem    32px  (2rem,    24pt)
+  .f7#{$ext} { font-size: 3rem }     // 36pt     3rem
+  .f8#{$ext} { font-size: 4rem }     // 48pt                64px  (4rem,    48pt)
+  .f9#{$ext} { font-size: 5rem }     // 60pt     5rem (f-5)
+  .f10#{$ext} {font-size: 6rem }     // 72pt     6rem (f-6) 96px  (6rem,    72pt)
+  .f11#{$ext} {font-size: 8rem }     // 96pt                128px (8rem,    96pt)
 }
 
 @include map-sizes using ($ext) {

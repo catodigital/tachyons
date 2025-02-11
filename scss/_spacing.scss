@@ -25,6 +25,12 @@
         .#{$type}#{$letter}#{$x}#{$ext} {
           @include directions($prefix, $side, $size);
         }
+        // negative margins
+        @if $type == "m" and $x > 0 {
+          .m#{$letter}#{$x}n#{$ext} {
+            @include directions($prefix, $side, -$size);
+          }
+        }
       }
       .#{$type}#{$letter}-auto#{$ext} {
         @include directions($prefix, $side, auto);
@@ -56,4 +62,31 @@
 
 @media #{$media-breakpoint-large} {
   @include expand-sizes("-l");
+}
+
+.sgs { scrollbar-gutter: stable }
+.sga { scrollbar-gutter: auto }
+
+// add this to the actual breakpoint so that other -l, -m, etc kick in BEFORE
+// the breakpoint is hit--this helps avoid the shrinking valley between the
+// beginning of a breakpoint and the addition/removal of other elements like
+// padding and margins. the gutter aligns with ph3/mh3
+
+// only do 2-4 max view page
+// common usage: "ph3 vp3-l"
+@media (min-width: $breakpoint-large) {
+  .vp1-l, .vp2-l, .vp3-l {
+    // The scrollbar is 1rem which is being counted in the overall width even
+    // though it is uncontrollable. This scrollbar-gutter setting SHOULD remove
+    // it from calculations, but it is not... c`est-la-vie
+    scrollbar-gutter: stable both-edges;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @for $x from 2 through 4 {
+    $maxwidth-gutter: list.nth($sizes, $x+1) * 2rem;
+    .vp#{$x}-l {
+      max-width: $breakpoint-large - $maxwidth-gutter;
+    }
+  }
 }

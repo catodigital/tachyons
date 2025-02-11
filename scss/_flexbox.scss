@@ -39,8 +39,8 @@
   }
   /* grow-shrink */
   @for $x from 0 through 3 {
-    .flex-grow-#{$x}#{$ext} { flex-grow: #{$x}; }
-    .flex-shrink-#{$x}#{$ext} { flex-shrink: #{$x}; }
+    .flex-grow-#{$x}#{$ext} { flex-grow: $x; }
+    .flex-shrink-#{$x}#{$ext} { flex-shrink: $x; }
   }
 
   /* wraps */

@@ -18,10 +18,10 @@
 @mixin grid-column($ext) {
   @for $x from 1 through 8 {
     // span some columns
-    .span-#{$x}#{$ext} { grid-column: span #{$x} / span #{$x}; }
-    .cols-#{$x}#{$ext} { grid-template-columns: repeat(#{$x}, auto) }
+    .span-#{$x}#{$ext} { grid-column: span $x / span $x; }
+    .cols-#{$x}#{$ext} { grid-template-columns: repeat($x, auto) }
     @if $x > 1 {
-      .icols-#{$x}#{$ext} { grid-template-columns: auto repeat(#{$x - 1}, 1fr); }
+      .icols-#{$x}#{$ext} { grid-template-columns: auto repeat($x - 1, 1fr); }
     }
     .start-#{$x}#{$ext} { grid-column-start: #{$x}; }
     .end-#{$x}#{$ext} { grid-column-end: #{$x}; }
@@ -37,7 +37,7 @@
   // .span-center4#{$ext} { grid-column: 6 / -6; }
   // .span-auto#{$ext} { grid-column: auto; }
   @each $x in (4, 8, 12, 16, 20, 24) {
-    .cols-min-#{$x}#{$ext} { grid-template-columns: repeat(auto-fill, minmax( #{$x}rem, 1fr )); }
+    .cols-min-#{$x}#{$ext} { grid-template-columns: repeat(auto-fill, minmax( $x * 1rem, 1fr )); }
   }
   .masonry#{$ext} { grid-template-columns: masonry }
   .subgrid#{$ext} { grid-template-columns: subgrid }

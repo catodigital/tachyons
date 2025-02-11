@@ -56,16 +56,16 @@ $sizes: (0, .25, .5, 1, 2, 3, 5, 8, 13, 21, 34);
 $sides: ("l": "-left", "r": "-right", "b": "-bottom", "t": "-top");
 $spans: ("a": "", "v": "vert", "h": "horiz");
 
-$breakpoint-small: 30em;
-$breakpoint-medium: 48em;
-$breakpoint-large: 60em;
+$breakpoint-small: 30rem;
+$breakpoint-medium: 48rem;
+$breakpoint-large: 62rem; // +2 because of the max view page vp-* settings reducing by 2
 
 $media-breakpoint-small: "screen and (min-width: #{$breakpoint-small})";
 $media-breakpoint-medium: "screen and (min-width: #{$breakpoint-medium})";
 $media-breakpoint-large: "screen and (min-width: #{$breakpoint-large})";
 
 $size_opts: ("", "-s", "-m", "-l");
-$size_map: ("": "", "-s": #{$media-breakpoint-small}, "-m": #{$media-breakpoint-medium}, "-l": #{$media-breakpoint-large});
+$size_map: ("": "", "-s": $media-breakpoint-small, "-m": $media-breakpoint-medium, "-l": $media-breakpoint-large);
 
 @mixin map-sizes {
   $size_map: ("": "", "-s": $media-breakpoint-small, "-m": $media-breakpoint-medium, "-l": $media-breakpoint-large);
