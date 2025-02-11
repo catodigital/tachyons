@@ -12342,13 +12342,20 @@ ul.li6 {
   }
 }
 @media (min-width: 60rem) {
-  .max-view-page {
+  .vp1-l, .vp2-l, .vp3-l {
     margin-left: auto;
     margin-right: auto;
+  }
+  .vp2-l {
+    max-width: calc(60rem - 0.25rem);
+  }
+  .vp3-l {
+    max-width: calc(60rem - 0.5rem);
+  }
+  .vp4-l {
     max-width: calc(60rem - 1rem);
   }
 }
-
 /*
    SPACING
 
