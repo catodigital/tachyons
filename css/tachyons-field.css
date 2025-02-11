@@ -12347,13 +12347,13 @@ ul.li6 {
     margin-right: auto;
   }
   .vp2-l {
-    max-width: calc(60rem - 0.25rem);
-  }
-  .vp3-l {
     max-width: calc(60rem - 0.5rem);
   }
-  .vp4-l {
+  .vp3-l {
     max-width: calc(60rem - 1rem);
+  }
+  .vp4-l {
+    max-width: calc(60rem - 2rem);
   }
 }
 /*

@@ -78,7 +78,7 @@
   }
   @for $x from 2 through 4 {
     .vp#{$x}-l {
-      max-width: #{calc(#{$breakpoint-large} - #{list.nth($sizes, $x)}rem)};
+      max-width: #{calc(#{$breakpoint-large} - #{list.nth($sizes, $x+1)}rem)};
     }
   }
 }
