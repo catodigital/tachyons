@@ -74,19 +74,19 @@
 
 // only do 2-4 max view page
 // common usage: "ph3 vp3-l"
-@media (min-width: #{$breakpoint-large}) {
+@media (min-width: $breakpoint-large) {
   .vp1-l, .vp2-l, .vp3-l {
     // The scrollbar is 1rem which is being counted in the overall width even
     // though it is uncontrollable. This scrollbar-gutter setting SHOULD remove
-    // it from calculations, but it isn't... ces-la-vie
+    // it from calculations, but it is not... c`est-la-vie
     scrollbar-gutter: stable both-edges;
     margin-left: auto;
     margin-right: auto;
   }
   @for $x from 2 through 4 {
-    $maxwidth-gutter: #{list.nth($sizes, $x+1)*2};
+    $maxwidth-gutter: list.nth($sizes, $x+1) * 2rem;
     .vp#{$x}-l {
-      max-width: #{calc(#{$breakpoint-large} - #{$maxwidth-gutter}rem)};
+      max-width: $breakpoint-large - $maxwidth-gutter;
     }
   }
 }

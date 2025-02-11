@@ -11,10 +11,10 @@
 */
 
 @mixin align-vertical($ext) {
-.v-base#{$ext}    { vertical-align: baseline; }
-.v-mid#{$ext}     { vertical-align: middle; }
-.v-top#{$ext}     { vertical-align: top; }
-.v-btm#{$ext}     { vertical-align: bottom; }
+.v-base#{$ext} { vertical-align: baseline; }
+.v-mid#{$ext}  { vertical-align: middle; }
+.v-top#{$ext}  { vertical-align: top; }
+.v-btm#{$ext}  { vertical-align: bottom; }
 }
 
 @include map-sizes using ($ext) {

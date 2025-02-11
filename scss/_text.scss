@@ -29,10 +29,10 @@
 .ttn { text-transform: none; }
 
 @mixin align-text($ext) {
-  .tl#{$ext}  { text-align: left; }
-  .tr#{$ext}  { text-align: right; }
-  .tc#{$ext}  { text-align: center; }
-  .tj#{$ext}  { text-align: justify; }
+  .tl#{$ext} { text-align: left; }
+  .tr#{$ext} { text-align: right; }
+  .tc#{$ext} { text-align: center; }
+  .tj#{$ext} { text-align: justify; }
   .center#{$ext} {
     margin-right: auto;
     margin-left: auto;
