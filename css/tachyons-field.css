@@ -12356,13 +12356,13 @@ ul.li6 {
     margin-right: auto;
   }
   .vp2-l {
-    max-width: calc(62rem - 1rem);
+    max-width: 61rem;
   }
   .vp3-l {
-    max-width: calc(62rem - 2rem);
+    max-width: 60rem;
   }
   .vp4-l {
-    max-width: calc(62rem - 4rem);
+    max-width: 58rem;
   }
 }
 /*

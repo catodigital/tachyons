@@ -65,7 +65,7 @@ $media-breakpoint-medium: "screen and (min-width: #{$breakpoint-medium})";
 $media-breakpoint-large: "screen and (min-width: #{$breakpoint-large})";
 
 $size_opts: ("", "-s", "-m", "-l");
-$size_map: ("": "", "-s": #{$media-breakpoint-small}, "-m": #{$media-breakpoint-medium}, "-l": #{$media-breakpoint-large});
+$size_map: ("": "", "-s": $media-breakpoint-small, "-m": $media-breakpoint-medium, "-l": $media-breakpoint-large);
 
 @mixin map-sizes {
   $size_map: ("": "", "-s": $media-breakpoint-small, "-m": $media-breakpoint-medium, "-l": $media-breakpoint-large);
